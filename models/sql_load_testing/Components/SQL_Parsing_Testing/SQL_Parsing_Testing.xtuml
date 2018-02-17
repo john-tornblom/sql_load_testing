@@ -1,0 +1,553 @@
+-- BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_C
+	VALUES ("87e85512-68d9-4aae-9021-60dfd84e6a76",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'SQL_Parsing_Testing',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'');
+INSERT INTO GD_MD
+	VALUES ("245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	111,
+	"87e85512-68d9-4aae-9021-60dfd84e6a76",
+	98,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'',
+	'sql_load_testing::Components::SQL_Parsing_Testing');
+INSERT INTO GD_GE
+	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"87e85512-68d9-4aae-9021-60dfd84e6a76",
+	103,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing');
+INSERT INTO GD_SHP
+	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO GD_CTR
+	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO DIM_ND
+	VALUES (1165.000000,
+	490.000000,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO DIM_GE
+	VALUES (4100.000000,
+	3100.000000,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("87bd8162-1b17-4f7f-b760-c41203774872",
+	4440.000000,
+	3590.000000,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO DIM_CON
+	VALUES ("ff31baae-2d36-4912-99dc-a30289ca70fd",
+	4488.000000,
+	3100.000000,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO GD_GE
+	VALUES ("ef160470-794c-45c7-9f62-7d031b34ba97",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"84efe997-f122-409f-984f-acc9085c1b47",
+	93,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing::Character_Stream::Character_Stream');
+INSERT INTO GD_CON
+	VALUES ("ef160470-794c-45c7-9f62-7d031b34ba97",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("cab991cf-1a65-4010-8f57-b5e584867747",
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"cab991cf-1a65-4010-8f57-b5e584867747");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"cab991cf-1a65-4010-8f57-b5e584867747",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("cab991cf-1a65-4010-8f57-b5e584867747",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("b494cddc-0fca-410e-b722-921f5ba51344",
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	3,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"b494cddc-0fca-410e-b722-921f5ba51344");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"b494cddc-0fca-410e-b722-921f5ba51344",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("b494cddc-0fca-410e-b722-921f5ba51344",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("1e5e001b-a8e9-46c4-a075-eab9588e0167",
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"1e5e001b-a8e9-46c4-a075-eab9588e0167");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"1e5e001b-a8e9-46c4-a075-eab9588e0167",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("1e5e001b-a8e9-46c4-a075-eab9588e0167",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("6dd7ab9c-5a17-47cd-93c5-ad663a1fc2cf",
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	"00000000-0000-0000-0000-000000000000",
+	"ee8812a5-b859-41a0-aa13-77cd4a6a58ee",
+	"c9226f09-8b1a-47e1-9270-75672658547d");
+INSERT INTO DIM_WAY
+	VALUES ("ee8812a5-b859-41a0-aa13-77cd4a6a58ee",
+	4440.000000,
+	3590.000000,
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("c9226f09-8b1a-47e1-9270-75672658547d",
+	4442.000000,
+	3660.000000,
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	"00000000-0000-0000-0000-000000000000",
+	"ee8812a5-b859-41a0-aa13-77cd4a6a58ee");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"ef160470-794c-45c7-9f62-7d031b34ba97",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ef160470-794c-45c7-9f62-7d031b34ba97",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("87bd8162-1b17-4f7f-b760-c41203774872",
+	"00000000-0000-0000-0000-000000000000",
+	"ef160470-794c-45c7-9f62-7d031b34ba97");
+INSERT INTO GD_GE
+	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885",
+	94,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
+INSERT INTO GD_CON
+	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"e0e9947b-edf1-4715-80f1-8e81e1b68dfe");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("f0146777-e738-4513-b542-562123894d4e",
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	3,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"f0146777-e738-4513-b542-562123894d4e");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"f0146777-e738-4513-b542-562123894d4e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("f0146777-e738-4513-b542-562123894d4e",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("b3c352fe-aaaa-43d9-8217-7beae458f7ea",
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"b3c352fe-aaaa-43d9-8217-7beae458f7ea");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"b3c352fe-aaaa-43d9-8217-7beae458f7ea",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("b3c352fe-aaaa-43d9-8217-7beae458f7ea",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("847a522f-c76e-4465-a361-aba20217ed8d",
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"00000000-0000-0000-0000-000000000000",
+	"faa808b8-ac03-4f5f-b5b7-88169a30f584",
+	"50dd8ae6-9ca7-4128-a981-eff3db1c69fe");
+INSERT INTO DIM_WAY
+	VALUES ("faa808b8-ac03-4f5f-b5b7-88169a30f584",
+	4488.000000,
+	3100.000000,
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("50dd8ae6-9ca7-4128-a981-eff3db1c69fe",
+	4485.000000,
+	3030.000000,
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"00000000-0000-0000-0000-000000000000",
+	"faa808b8-ac03-4f5f-b5b7-88169a30f584");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("ff31baae-2d36-4912-99dc-a30289ca70fd",
+	"00000000-0000-0000-0000-000000000000",
+	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2");
+INSERT INTO GD_GE
+	VALUES ("979d4811-9978-4358-8ad7-ed8f99c303ea",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"42092617-b945-421d-a473-7f754f8701f8",
+	108,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing::Entry_Points');
+INSERT INTO GD_SHP
+	VALUES ("979d4811-9978-4358-8ad7-ed8f99c303ea");
+INSERT INTO GD_NCS
+	VALUES ("979d4811-9978-4358-8ad7-ed8f99c303ea");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"979d4811-9978-4358-8ad7-ed8f99c303ea");
+INSERT INTO DIM_GE
+	VALUES (4833.000000,
+	3100.000000,
+	"979d4811-9978-4358-8ad7-ed8f99c303ea",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("979d4811-9978-4358-8ad7-ed8f99c303ea",
+	0,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO GD_GE
+	VALUES ("ecf35edb-d962-4e20-8d9d-3da1cbaadd6e",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"b7d03877-d9bd-4d69-a744-27653aeaf2b6",
+	108,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing::Stimuli');
+INSERT INTO GD_SHP
+	VALUES ("ecf35edb-d962-4e20-8d9d-3da1cbaadd6e");
+INSERT INTO GD_NCS
+	VALUES ("ecf35edb-d962-4e20-8d9d-3da1cbaadd6e");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"ecf35edb-d962-4e20-8d9d-3da1cbaadd6e");
+INSERT INTO DIM_GE
+	VALUES (5053.000000,
+	3100.000000,
+	"ecf35edb-d962-4e20-8d9d-3da1cbaadd6e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("ecf35edb-d962-4e20-8d9d-3da1cbaadd6e",
+	0,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO DIM_DIA
+	VALUES ("245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PO
+	VALUES ("952bfc34-b6cf-43f3-8336-61befd5c908c",
+	"87e85512-68d9-4aae-9021-60dfd84e6a76",
+	'Character_Stream',
+	0,
+	0);
+INSERT INTO C_IR
+	VALUES ("84efe997-f122-409f-984f-acc9085c1b47",
+	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	"00000000-0000-0000-0000-000000000000",
+	"952bfc34-b6cf-43f3-8336-61befd5c908c");
+INSERT INTO C_R
+	VALUES ("84efe997-f122-409f-984f-acc9085c1b47",
+	'Character_Stream',
+	'',
+	'Unnamed Interface',
+	'SQL_Parsing_Testing::Character_Stream::Character_Stream');
+INSERT INTO SPR_REP
+	VALUES ("a82812f1-1b19-41b7-b1ed-4f9f33db15d5",
+	"8a3f1fe8-30c1-4ad8-a0c7-ad4a34eed8b1",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("a82812f1-1b19-41b7-b1ed-4f9f33db15d5",
+	'String',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("8a3f1fe8-30c1-4ad8-a0c7-ad4a34eed8b1",
+	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	-1,
+	'String',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("ea5ba488-ecba-4126-b17a-2f7c8df9b152",
+	"d702798f-1fd3-4f0e-9263-cbec087e990b",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("ea5ba488-ecba-4126-b17a-2f7c8df9b152",
+	'File',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("d702798f-1fd3-4f0e-9263-cbec087e990b",
+	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	-1,
+	'File',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("09a35036-dc67-4be0-991d-26e9efcdea33",
+	"00000000-0000-0000-0000-000000000000",
+	'Character_Stream',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+INSERT INTO C_PO
+	VALUES ("24e65b92-e566-4930-b5ba-9de088ee49c8",
+	"87e85512-68d9-4aae-9021-60dfd84e6a76",
+	'Instance_Stream',
+	0,
+	0);
+INSERT INTO C_IR
+	VALUES ("88d36223-0cf5-4f3b-a40e-ec61310b3885",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	"00000000-0000-0000-0000-000000000000",
+	"24e65b92-e566-4930-b5ba-9de088ee49c8");
+INSERT INTO C_P
+	VALUES ("88d36223-0cf5-4f3b-a40e-ec61310b3885",
+	'SQL_Instance_Stream',
+	'Unnamed Interface',
+	'',
+	'SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
+INSERT INTO SPR_PEP
+	VALUES ("7b889fcf-0842-4d5a-9831-d065184a7866",
+	"7af98dd5-148e-4781-83d4-60d0b1c2c809",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("7b889fcf-0842-4d5a-9831-d065184a7866",
+	'Instance',
+	'',
+	'if param.key_letter == "Class_A"
+	create object instance inst of Class_A;
+	inst.load_id = param.id;
+	
+elif param.key_letter == "Class_B"
+	create object instance inst of Class_B;
+	inst.load_id = param.id;
+	
+elif param.key_letter == "Class_C"
+	create object instance inst of Class_C;
+	inst.load_id = param.id;
+	
+end if;
+',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("7af98dd5-148e-4781-83d4-60d0b1c2c809",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Instance',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("a5729142-190d-4a6e-be94-ae16ddc4a9dc",
+	"2e20fecc-5f52-457b-bf3a-4ba1534886d6",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("a5729142-190d-4a6e-be94-ae16ddc4a9dc",
+	'Connection',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("2e20fecc-5f52-457b-bf3a-4ba1534886d6",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Connection',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("5f2967cb-9e1e-4620-8269-d30c317901ee",
+	"bee5bbc3-be55-4771-9699-a299cf80d273",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("5f2967cb-9e1e-4620-8269-d30c317901ee",
+	'Integer',
+	'',
+	'select any inst_b from instances of Class_B where(selected.load_id == param.instance_id);
+select any inst_c from instances of Class_C where(selected.load_id == param.instance_id);
+
+if not_empty inst_b and param.name == "id"
+	inst_b.id = param.value;
+	return;
+end if;
+
+if not_empty inst_c and param.name == "id"
+	inst_c.id = param.value;
+	return;
+end if;',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("bee5bbc3-be55-4771-9699-a299cf80d273",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Integer',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("c322abdc-6335-42d6-9b36-f97af3250c95",
+	"303e5e28-8f7c-4e5e-9b6e-681a35ec368d",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("c322abdc-6335-42d6-9b36-f97af3250c95",
+	'Real',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("303e5e28-8f7c-4e5e-9b6e-681a35ec368d",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Real',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("e339c326-f5f9-4798-b6b3-a41e7948cd87",
+	"e8f7d6b2-aa9e-42ad-9203-827ba0a0612d",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("e339c326-f5f9-4798-b6b3-a41e7948cd87",
+	'Unique_Id',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("e8f7d6b2-aa9e-42ad-9203-827ba0a0612d",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Unique_Id',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("68cfe1f9-6dcb-4cc6-ae5c-6469e74b1f0d",
+	"34ab2627-f0c6-4d45-91d8-260a8331ef72",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PS
+	VALUES ("68cfe1f9-6dcb-4cc6-ae5c-6469e74b1f0d",
+	'String',
+	'',
+	'select any inst_c from instances of Class_C where(selected.load_id == param.instance_id);
+if not_empty inst_c and param.name == "name"
+	inst_c.name = param.value;
+	return;
+end if;
+',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("34ab2627-f0c6-4d45-91d8-260a8331ef72",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'String',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	"00000000-0000-0000-0000-000000000000",
+	'SQL_Instance_Stream',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO PE_PE
+	VALUES ("87e85512-68d9-4aae-9021-60dfd84e6a76",
+	1,
+	"67facddc-55e6-4404-b9c4-a2a57edf3c1f",
+	"00000000-0000-0000-0000-000000000000",
+	2);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("67facddc-55e6-4404-b9c4-a2a57edf3c1f",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Components',
+	'',
+	0,
+	'../Components.xtuml');

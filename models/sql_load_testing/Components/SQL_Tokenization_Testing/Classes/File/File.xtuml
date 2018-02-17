@@ -1,0 +1,165 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	'File',
+	15,
+	'File',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("ad315e9a-3f7d-40fb-89d2-88308954f81f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	'Open',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'self.fd = FS::Open(filename: self.filename, mode: File_Mode::Write);
+if(self.fd == ILLEGAL_FILE_DESCRIPTOR)
+	Log::Error(msg: "unable to open " + self.filename);
+	return false;
+else
+	return true;
+end if;
+',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TFR
+	VALUES ("1803e246-bd7e-4f1b-9980-bb2dda2f1876",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	'Append',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'if not FS::Write(fd: self.fd, str: param.data)
+	Log::Error(msg: "cannot write test result data to " + self.filename);
+end if;',
+	1,
+	'',
+	"ad315e9a-3f7d-40fb-89d2-88308954f81f",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("6f6c7812-8f55-4127-b9bb-da27a5487769",
+	"1803e246-bd7e-4f1b-9980-bb2dda2f1876",
+	'data',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("e9de51e7-9c0e-4c1a-a604-2bf8d178b34f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	'Close',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'if not FS::Close(fd: self.fd)
+	Log::Error(msg: "cannot close test results file " + self.filename);
+end if;
+',
+	1,
+	'',
+	"1803e246-bd7e-4f1b-9980-bb2dda2f1876",
+	0);
+INSERT INTO O_NBATTR
+	VALUES ("6b35c196-f030-4aba-ba88-04ba08b6f746",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_BATTR
+	VALUES ("6b35c196-f030-4aba-ba88-04ba08b6f746",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_ATTR
+	VALUES ("6b35c196-f030-4aba-ba88-04ba08b6f746",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("11440401-f176-4b83-9c25-e9154adfff0f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_BATTR
+	VALUES ("11440401-f176-4b83-9c25-e9154adfff0f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_ATTR
+	VALUES ("11440401-f176-4b83-9c25-e9154adfff0f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	"6b35c196-f030-4aba-ba88-04ba08b6f746",
+	'filename',
+	'',
+	'',
+	'filename',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("3e4587b9-2c02-45a2-a03c-230b58798bbd",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_BATTR
+	VALUES ("3e4587b9-2c02-45a2-a03c-230b58798bbd",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_ATTR
+	VALUES ("3e4587b9-2c02-45a2-a03c-230b58798bbd",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	"11440401-f176-4b83-9c25-e9154adfff0f",
+	'fd',
+	'',
+	'',
+	'fd',
+	0,
+	"1507374d-4668-4da6-9729-aa71f4a270af",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("1507374d-4668-4da6-9729-aa71f4a270af",
+	"00000000-0000-0000-0000-000000000000",
+	'File_Descriptor',
+	'',
+	'',
+	'../../../../../../../mc_stdlib/models/mc_stdlib/MC_Standard_Library/MC_Standard_Library.xtuml');
+INSERT INTO O_ID
+	VALUES (2,
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_OIDA
+	VALUES ("3e4587b9-2c02-45a2-a03c-230b58798bbd",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	2,
+	'fd');
+INSERT INTO O_ID
+	VALUES (1,
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_OIDA
+	VALUES ("11440401-f176-4b83-9c25-e9154adfff0f",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	1,
+	'filename');
+INSERT INTO O_ID
+	VALUES (0,
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1");
+INSERT INTO O_OIDA
+	VALUES ("6b35c196-f030-4aba-ba88-04ba08b6f746",
+	"c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	0,
+	'id');
+INSERT INTO PE_PE
+	VALUES ("c6033fbb-fa96-4a1b-9600-4677ba04deb1",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

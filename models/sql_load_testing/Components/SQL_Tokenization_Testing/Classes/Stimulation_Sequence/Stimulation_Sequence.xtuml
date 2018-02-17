@@ -1,0 +1,85 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("a39e902e-802c-4b68-898d-e60e079bf29c",
+	'Stimulation_Sequence',
+	12,
+	'Stimulation_Sequence',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("2deb0837-2869-43b8-aa89-63cbbc86dc37",
+	"a39e902e-802c-4b68-898d-e60e079bf29c",
+	'Append',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select any last_stimuli from instances of Stimuli where (false);
+select any stimuli related by self->Stimuli[R106];
+while not_empty stimuli
+	last_stimuli = stimuli;
+	select one stimuli related by stimuli->Stimuli[R105.''precedes''];
+end while;
+
+create object instance stimuli of Stimuli;
+relate stimuli to self across R106;
+stimuli.value = param.value;
+
+if not_empty last_stimuli
+	relate last_stimuli to stimuli across R105.''precedes'';
+end if;
+',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("0eb59e56-647e-4c36-a0d4-420815dbcd6b",
+	"2deb0837-2869-43b8-aa89-63cbbc86dc37",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("9bfd2115-62d8-43e5-aa68-bf202320eea3",
+	"a39e902e-802c-4b68-898d-e60e079bf29c");
+INSERT INTO O_BATTR
+	VALUES ("9bfd2115-62d8-43e5-aa68-bf202320eea3",
+	"a39e902e-802c-4b68-898d-e60e079bf29c");
+INSERT INTO O_ATTR
+	VALUES ("9bfd2115-62d8-43e5-aa68-bf202320eea3",
+	"a39e902e-802c-4b68-898d-e60e079bf29c",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"a39e902e-802c-4b68-898d-e60e079bf29c");
+INSERT INTO O_ID
+	VALUES (1,
+	"a39e902e-802c-4b68-898d-e60e079bf29c");
+INSERT INTO O_ID
+	VALUES (2,
+	"a39e902e-802c-4b68-898d-e60e079bf29c");
+INSERT INTO PE_PE
+	VALUES ("a39e902e-802c-4b68-898d-e60e079bf29c",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

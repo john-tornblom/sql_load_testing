@@ -1,0 +1,348 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Test_Case',
+	17,
+	'Test_Case',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("092fd5e4-422f-4b8b-b51a-1a2af556cd26",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Add_Stimuli',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one stimulation_sequence related by self->Stimulation_Sequence[R107];
+stimulation_sequence.Append(value: param.str);
+',
+	1,
+	'',
+	"1d9fa31f-cee9-4f03-9cc4-6f9ee204026e",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("30f6bd9c-6ef2-43a7-aa62-c2c804aef84b",
+	"092fd5e4-422f-4b8b-b51a-1a2af556cd26",
+	'str',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("a727268f-91e5-40f6-88e3-c15cb44047f0",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Integer',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Integer(value: param.value);',
+	1,
+	'',
+	"092fd5e4-422f-4b8b-b51a-1a2af556cd26",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("db8ebc0a-0afe-41ce-a30c-32d5bd82bfdd",
+	"a727268f-91e5-40f6-88e3-c15cb44047f0",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("46462c5c-cc47-4f44-9d3b-43dd0d5e41c8",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Unique_Id',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Unique_Id(value: param.value);',
+	1,
+	'',
+	"a727268f-91e5-40f6-88e3-c15cb44047f0",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("46dd4998-4d9a-41cf-8a6f-7af0099960e5",
+	"46462c5c-cc47-4f44-9d3b-43dd0d5e41c8",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("1af3a0b6-c466-4e4f-b081-62e7fc27d557",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Real',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Real(value: param.value);',
+	1,
+	'',
+	"46462c5c-cc47-4f44-9d3b-43dd0d5e41c8",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("a901b45e-6e2c-49a0-9c9b-976fed765b91",
+	"1af3a0b6-c466-4e4f-b081-62e7fc27d557",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("e0f325aa-b33a-48e8-9214-601e27b61aa5",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_String',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_String(value: param.value);',
+	1,
+	'',
+	"1af3a0b6-c466-4e4f-b081-62e7fc27d557",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("ee551bda-4565-4b43-ad81-ff54989983d9",
+	"e0f325aa-b33a-48e8-9214-601e27b61aa5",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("9253c95b-d254-4472-8d08-6fa38872b398",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Punctuation',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Punctuation(ascii_code: param.ascii_code);',
+	1,
+	'',
+	"e0f325aa-b33a-48e8-9214-601e27b61aa5",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("fdf7536c-6df1-40cf-ab19-f1ee09a2e842",
+	"9253c95b-d254-4472-8d08-6fa38872b398",
+	'ascii_code',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("fe1244e9-a8ad-48ff-9fcd-957867215664",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Identifier',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Identifier(name: param.name);',
+	1,
+	'',
+	"9253c95b-d254-4472-8d08-6fa38872b398",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("ae525698-321a-4532-a422-ab720646dfb7",
+	"fe1244e9-a8ad-48ff-9fcd-957867215664",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("a917d113-b323-4bca-8357-f3edb3d640f1",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_Comment',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_Comment(value: param.value);',
+	1,
+	'',
+	"fe1244e9-a8ad-48ff-9fcd-957867215664",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("a66727e6-5f2f-41c7-8ad4-6a1f8083a851",
+	"a917d113-b323-4bca-8357-f3edb3d640f1",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("55848f03-50ba-4b0d-a3ff-63ee37c66761",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Expect_End_Of_Stream',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select one token_sequence related by self->Token_Sequence[R104];
+token_sequence.Append_End_Of_Stream();',
+	1,
+	'',
+	"a917d113-b323-4bca-8357-f3edb3d640f1",
+	0);
+INSERT INTO O_TFR
+	VALUES ("1d9fa31f-cee9-4f03-9cc4-6f9ee204026e",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Initialize',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance stimuli_sequence of Stimulation_Sequence;
+relate stimuli_sequence to self across R107;
+
+create object instance token_sequence of Token_Sequence;
+relate token_sequence to self across R104;
+
+Registration::Register_Test_Case(suite_id: param.suite_id, case_id: self.id, 
+								 name: param.title, description: "");',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("89349f25-7c61-42e3-842a-d342fa3cc4de",
+	"1d9fa31f-cee9-4f03-9cc4-6f9ee204026e",
+	'suite_id',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("e461de97-d2b6-40fd-83b0-5d3581d6d707",
+	"1d9fa31f-cee9-4f03-9cc4-6f9ee204026e",
+	'title',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"89349f25-7c61-42e3-842a-d342fa3cc4de",
+	'');
+INSERT INTO O_TFR
+	VALUES ("31b64306-b98f-46f8-bd0d-db19b2239518",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	'Test_Head',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select any first_token from instances of Token where (false);
+select one token_sequence related by self->Token_Sequence[R104];
+select any token related by token_sequence->Token[R103];
+while not_empty token
+	first_token = token;
+	select one token related by token->Token[R102.''succeeds''];
+end while;
+
+if empty first_token
+	Assertion::Assert(value: false, msg: "superflous token");
+	return;
+end if;
+
+select any token from instances of Token where ( selected.id == param.token_id);
+equals = first_token.Equals(token_id: token.id);
+Assertion::Is_True(value: equals, msg: first_token.To_String() + " == " + token.To_String());
+
+unrelate first_token from token_sequence across R103;
+select one token related by first_token->Token[R102.''precedes''];
+if not_empty token
+	unrelate first_token from token across R102.''precedes'';
+end if;
+
+select any token related by token_sequence->Token[R103];
+if empty token
+	Execution::Terminate();
+end if;
+',
+	1,
+	'',
+	"55848f03-50ba-4b0d-a3ff-63ee37c66761",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("a5c97b87-f9d1-4500-aa9d-80108b7b7cfc",
+	"31b64306-b98f-46f8-bd0d-db19b2239518",
+	'token_id',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("db692117-351a-49ed-8ad1-808333ef0a61",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_BATTR
+	VALUES ("db692117-351a-49ed-8ad1-808333ef0a61",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_ATTR
+	VALUES ("db692117-351a-49ed-8ad1-808333ef0a61",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("aafc664e-3611-4244-8a66-b8773d30b2da",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_BATTR
+	VALUES ("aafc664e-3611-4244-8a66-b8773d30b2da",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_ATTR
+	VALUES ("aafc664e-3611-4244-8a66-b8773d30b2da",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	"db692117-351a-49ed-8ad1-808333ef0a61",
+	'running',
+	'',
+	'',
+	'running',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_OIDA
+	VALUES ("db692117-351a-49ed-8ad1-808333ef0a61",
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	0,
+	'id');
+INSERT INTO O_ID
+	VALUES (1,
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO O_ID
+	VALUES (2,
+	"d33c2646-eab5-48de-af75-c4b50a7dc88d");
+INSERT INTO PE_PE
+	VALUES ("d33c2646-eab5-48de-af75-c4b50a7dc88d",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

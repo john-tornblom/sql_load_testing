@@ -1,0 +1,286 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("d48865fc-4818-4241-97bf-d31e41667533",
+	'Token_Sequence',
+	2,
+	'Token_Sequence',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("c743096f-ba4a-4097-bf73-c2a9156debd9",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Integer',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance integer of Integer;
+relate token to integer across R101;
+integer.value = param.value;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("9719cb73-b908-4ff2-bbfa-d6034706962b",
+	"c743096f-ba4a-4097-bf73-c2a9156debd9",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("38e66167-3345-406f-8153-2cdaf590d3b3",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Unique_Id',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance unique_id of Unique_Id;
+relate token to unique_id across R101;
+unique_id.value = param.value;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"c743096f-ba4a-4097-bf73-c2a9156debd9",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("d4397ad6-3b4a-4198-8121-8042a65edbdb",
+	"38e66167-3345-406f-8153-2cdaf590d3b3",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("f08f0b5b-5377-4fb9-9615-a82e7158a913",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Real',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance real of Real;
+relate token to real across R101;
+real.value = param.value;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"38e66167-3345-406f-8153-2cdaf590d3b3",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("7e80e28c-7b72-4f4a-9b4b-2ebbc1650fe1",
+	"f08f0b5b-5377-4fb9-9615-a82e7158a913",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("79f0ec85-c1a8-4cc4-92dd-fcaf3f2e598a",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_String',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance string of String;
+relate token to string across R101;
+string.value = param.value;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"f08f0b5b-5377-4fb9-9615-a82e7158a913",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("9345188c-5745-4b79-9d40-08e8c820ded4",
+	"79f0ec85-c1a8-4cc4-92dd-fcaf3f2e598a",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("d3aea219-4e74-4d0d-9fd1-061a2125a996",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Punctuation',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance punctuation of Punctuation;
+relate token to punctuation across R101;
+punctuation.ascii_code = param.ascii_code;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"79f0ec85-c1a8-4cc4-92dd-fcaf3f2e598a",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("4f723aef-070d-490d-a4fe-6ca250b667ad",
+	"d3aea219-4e74-4d0d-9fd1-061a2125a996",
+	'ascii_code',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("b6478ea9-1895-4fea-b97c-59d206e48221",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Identifier',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance identifier of Identifier;
+relate token to identifier across R101;
+identifier.name = param.name;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"d3aea219-4e74-4d0d-9fd1-061a2125a996",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("10db52c3-a09e-4ea4-8474-7374b9b1c4f6",
+	"b6478ea9-1895-4fea-b97c-59d206e48221",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("cc4dfea3-ee2e-40aa-8836-4efad2eb8db3",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Comment',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance comment of Comment;
+relate token to comment across R101;
+comment.value = param.value;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"b6478ea9-1895-4fea-b97c-59d206e48221",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("1fff2c46-9850-4973-83a4-a49818ee3f87",
+	"cc4dfea3-ee2e-40aa-8836-4efad2eb8db3",
+	'value',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("d8f0cf2d-278c-4ddf-9957-e9083f5a21f2",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_Token',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select any last_token from instances of Token where (false);
+select any token related by self->Token[R103];
+while not_empty token
+	last_token = token;
+	select one token related by token->Token[R102.''precedes''];
+end while;
+
+select any token from instances of Token where (selected.id == param.token_id);
+relate token to self across R103;
+if not_empty last_token
+	relate last_token to token across R102.''precedes'';
+end if;
+',
+	1,
+	'',
+	"9b7205c0-a3f6-4737-a541-52c2836a361c",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("a6454713-0f5b-43b6-a822-8d67fe6b897c",
+	"d8f0cf2d-278c-4ddf-9957-e9083f5a21f2",
+	'token_id',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("9b7205c0-a3f6-4737-a541-52c2836a361c",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	'Append_End_Of_Stream',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance token of Token;
+create object instance end_of_stream of End_Of_Stream;
+relate token to end_of_stream across R101;
+self.Append_Token(token_id: token.id);
+',
+	1,
+	'',
+	"cc4dfea3-ee2e-40aa-8836-4efad2eb8db3",
+	0);
+INSERT INTO O_NBATTR
+	VALUES ("b37391cd-1687-42d2-9817-a68995362b4f",
+	"d48865fc-4818-4241-97bf-d31e41667533");
+INSERT INTO O_BATTR
+	VALUES ("b37391cd-1687-42d2-9817-a68995362b4f",
+	"d48865fc-4818-4241-97bf-d31e41667533");
+INSERT INTO O_ATTR
+	VALUES ("b37391cd-1687-42d2-9817-a68995362b4f",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (2,
+	"d48865fc-4818-4241-97bf-d31e41667533");
+INSERT INTO O_ID
+	VALUES (1,
+	"d48865fc-4818-4241-97bf-d31e41667533");
+INSERT INTO O_ID
+	VALUES (0,
+	"d48865fc-4818-4241-97bf-d31e41667533");
+INSERT INTO O_OIDA
+	VALUES ("b37391cd-1687-42d2-9817-a68995362b4f",
+	"d48865fc-4818-4241-97bf-d31e41667533",
+	0,
+	'id');
+INSERT INTO PE_PE
+	VALUES ("d48865fc-4818-4241-97bf-d31e41667533",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

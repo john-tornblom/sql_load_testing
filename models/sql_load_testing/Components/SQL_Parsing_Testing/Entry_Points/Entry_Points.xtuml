@@ -1,0 +1,88 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("42092617-b945-421d-a473-7f754f8701f8",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Entry_Points',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("a7e90e71-0b1e-4858-86b4-9088322d714f",
+	112,
+	"42092617-b945-421d-a473-7f754f8701f8",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'sql_load_testing::Components::SQL_Parsing_Testing::Entry_Points');
+INSERT INTO DIM_DIA
+	VALUES ("a7e90e71-0b1e-4858-86b4-9088322d714f",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
+	"00000000-0000-0000-0000-000000000000",
+	'Execute',
+	'',
+	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
+
+Character_Stream::String(value: "CREATE TABLE Class_A ();");
+Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
+Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
+
+Character_Stream::String(value: "CREATE TABLE Class_B (id INTEGER);");
+Character_Stream::String(value: "INSERT INTO Class_B VALUES (1);");
+Character_Stream::String(value: "INSERT INTO Class_B VALUES (2);");
+Character_Stream::String(value: "INSERT INTO Class_B VALUES (3);");
+
+Character_Stream::String(value: "CREATE TABLE Class_C (id INTEGER, name STRING);");
+Character_Stream::String(value: "INSERT INTO Class_C VALUES (1, ''Jacquelyn Morton'');");
+Character_Stream::String(value: "INSERT INTO Class_C VALUES (2, ''Chelsea Williamson'');");
+Character_Stream::String(value: "INSERT INTO Class_C VALUES (3, ''Felicia Warner'');");
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
+	1,
+	"42092617-b945-421d-a473-7f754f8701f8",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("42092617-b945-421d-a473-7f754f8701f8",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"87e85512-68d9-4aae-9021-60dfd84e6a76",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("87e85512-68d9-4aae-9021-60dfd84e6a76",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'SQL_Parsing_Testing',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../SQL_Parsing_Testing.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'sql_load_testing',
+	1,
+	'../../../sql_load_testing.xtuml');

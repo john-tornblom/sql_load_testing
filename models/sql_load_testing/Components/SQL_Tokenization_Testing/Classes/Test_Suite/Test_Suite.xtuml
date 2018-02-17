@@ -1,0 +1,85 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	'Test_Suite',
+	18,
+	'Test_Suite',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("5f5e0198-e95e-40cb-b2ef-e7cf6fb73126",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_BATTR
+	VALUES ("5f5e0198-e95e-40cb-b2ef-e7cf6fb73126",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_ATTR
+	VALUES ("5f5e0198-e95e-40cb-b2ef-e7cf6fb73126",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("275355cd-27fd-45c6-a7a6-076ca4b9bf16",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_BATTR
+	VALUES ("275355cd-27fd-45c6-a7a6-076ca4b9bf16",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_ATTR
+	VALUES ("275355cd-27fd-45c6-a7a6-076ca4b9bf16",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	"5f5e0198-e95e-40cb-b2ef-e7cf6fb73126",
+	'singleton',
+	'',
+	'',
+	'singleton',
+	0,
+	"950014b3-9fd8-4318-b42b-930910127ffa",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("950014b3-9fd8-4318-b42b-930910127ffa",
+	"00000000-0000-0000-0000-000000000000",
+	'Singleton',
+	'',
+	'',
+	'../Classes.xtuml');
+INSERT INTO O_ID
+	VALUES (0,
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_OIDA
+	VALUES ("5f5e0198-e95e-40cb-b2ef-e7cf6fb73126",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	0,
+	'id');
+INSERT INTO O_ID
+	VALUES (1,
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO O_OIDA
+	VALUES ("275355cd-27fd-45c6-a7a6-076ca4b9bf16",
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	1,
+	'singleton');
+INSERT INTO O_ID
+	VALUES (2,
+	"f8e11e6e-0aaa-44e1-9e94-64463857508e");
+INSERT INTO PE_PE
+	VALUES ("f8e11e6e-0aaa-44e1-9e94-64463857508e",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

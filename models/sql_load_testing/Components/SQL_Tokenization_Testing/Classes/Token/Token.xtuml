@@ -1,0 +1,160 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	'Token',
+	3,
+	'Token',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("bafe60ec-8c08-479b-8f2e-cc5142eea7ca",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	'Equals',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'select one integer related by self->Integer[R101];
+select one unique_id related by self->Unique_Id[R101];
+select one real related by self->Real[R101];
+select one string related by self->String[R101];
+select one punctuation related by self->Punctuation[R101];
+select one identifier related by self->Identifier[R101];
+select one comment related by self->Comment[R101];
+select one end_of_stream related by self->End_Of_Stream[R101];
+
+if not_empty integer
+	return integer.Equals(token_id: param.token_id);
+	
+elif not_empty unique_id
+	return unique_id.Equals(token_id: param.token_id);
+	
+elif not_empty real
+	return real.Equals(token_id: param.token_id);
+	
+elif not_empty string
+	return string.Equals(token_id: param.token_id);
+	
+elif not_empty punctuation
+	return punctuation.Equals(token_id: param.token_id);
+	
+elif not_empty identifier
+	return identifier.Equals(token_id: param.token_id);
+	
+elif not_empty comment
+	return comment.Equals(token_id: param.token_id);
+	
+elif not_empty end_of_stream
+	return end_of_stream.Equals(token_id: param.token_id);
+	
+else
+	return false;
+end if;
+',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0);
+INSERT INTO O_TPARM
+	VALUES ("cae25603-2293-4960-8488-566544d77d6d",
+	"bafe60ec-8c08-479b-8f2e-cc5142eea7ca",
+	'token_id',
+	"ba5eda7a-def5-0000-0000-000000000005",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("3e34c269-89d5-43ac-9833-9fcfaaf1d052",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	'To_String',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'select one integer related by self->Integer[R101];
+select one unique_id related by self->Unique_Id[R101];
+select one real related by self->Real[R101];
+select one string related by self->String[R101];
+select one punctuation related by self->Punctuation[R101];
+select one identifier related by self->Identifier[R101];
+select one comment related by self->Comment[R101];
+select one end_of_stream related by self->End_Of_Stream[R101];
+
+if not_empty integer
+	return "Integer(" + STR::From_Integer( value: integer.value) + ")";
+	
+elif not_empty unique_id
+	return "Unique_Id(" + STR::From_Unique_Id(value: unique_id.value) + ")";
+	
+elif not_empty real
+	return "Real(" + STR::From_Real(value: real.value) + ")";
+	
+elif not_empty string
+	return "String(" + string.value + ")";
+	
+elif not_empty punctuation
+	return "Punctuation(" + STR::From_ASCII_Code(code: punctuation.ascii_code) + ")";
+	
+elif not_empty identifier
+	return "Identifier(" + identifier.name + ")";
+	
+elif not_empty comment
+	return "Comment(" + comment.value + ")";
+	
+elif not_empty end_of_stream
+	return "End_Of_Stream()";
+	
+else
+	return "Unknown_Token()";
+end if;
+',
+	1,
+	'',
+	"bafe60ec-8c08-479b-8f2e-cc5142eea7ca",
+	0);
+INSERT INTO O_NBATTR
+	VALUES ("2d537c6d-b30e-41d4-ae51-17768f5f3db3",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97");
+INSERT INTO O_BATTR
+	VALUES ("2d537c6d-b30e-41d4-ae51-17768f5f3db3",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97");
+INSERT INTO O_ATTR
+	VALUES ("2d537c6d-b30e-41d4-ae51-17768f5f3db3",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	"00000000-0000-0000-0000-000000000000",
+	'id',
+	'',
+	'',
+	'id',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000005",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97");
+INSERT INTO O_OIDA
+	VALUES ("2d537c6d-b30e-41d4-ae51-17768f5f3db3",
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	0,
+	'id');
+INSERT INTO O_ID
+	VALUES (1,
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97");
+INSERT INTO O_ID
+	VALUES (2,
+	"34d7a10f-d47b-4cda-95ca-d01d7126ca97");
+INSERT INTO PE_PE
+	VALUES ("34d7a10f-d47b-4cda-95ca-d01d7126ca97",
+	1,
+	"7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("7dc57e46-db32-4812-9610-60deabd7d5f2",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Classes',
+	'',
+	0,
+	'../Classes.xtuml');

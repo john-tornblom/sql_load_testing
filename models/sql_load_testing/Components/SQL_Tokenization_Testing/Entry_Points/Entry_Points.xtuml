@@ -1,0 +1,177 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("59225983-6b79-40a8-9291-aec76c132849",
+	"00000000-0000-0000-0000-000000000000",
+	"cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'Entry_Points',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("1eec2751-6e6d-4e4e-b420-3f1bf0be0b20",
+	112,
+	"59225983-6b79-40a8-9291-aec76c132849",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'sql_load_testing::Components::SQL_Tokenization_Testing::Entry_Points');
+INSERT INTO DIM_DIA
+	VALUES ("1eec2751-6e6d-4e4e-b420-3f1bf0be0b20",
+	'',
+	1.000000,
+	4000.000000,
+	3000.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("1038928c-ed81-430d-9859-dc2c1eb6b7f0",
+	"00000000-0000-0000-0000-000000000000",
+	'Execute',
+	'',
+	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
+Log::Info(msg: "Starting SQL tokenization testing");
+
+create object instance test_suite of Test_Suite;
+
+Registration::Register_Test_Suite(suite_id: test_suite.id, 
+								  name: "SQL tokenization testing", 
+								  description: "");
+
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Punctuations");
+test_case.Add_Stimuli(str: ",,,((()));;;");
+test_case.Expect_Punctuation(ascii_code: ASCII_COMMA);
+test_case.Expect_Punctuation(ascii_code: ASCII_COMMA);
+test_case.Expect_Punctuation(ascii_code: ASCII_COMMA);
+
+test_case.Expect_Punctuation(ascii_code: ASCII_LEFT_PARENTHESIS);
+test_case.Expect_Punctuation(ascii_code: ASCII_LEFT_PARENTHESIS);
+test_case.Expect_Punctuation(ascii_code: ASCII_LEFT_PARENTHESIS);
+
+test_case.Expect_Punctuation(ascii_code: ASCII_RIGHT_PARENTHESIS);
+test_case.Expect_Punctuation(ascii_code: ASCII_RIGHT_PARENTHESIS);
+test_case.Expect_Punctuation(ascii_code: ASCII_RIGHT_PARENTHESIS);
+
+test_case.Expect_Punctuation(ascii_code: ASCII_SEMICOLON);
+test_case.Expect_Punctuation(ascii_code: ASCII_SEMICOLON);
+test_case.Expect_Punctuation(ascii_code: ASCII_SEMICOLON);
+
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Empty comment");
+test_case.Add_Stimuli(str: "--");
+test_case.Expect_Comment( value: "");
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Comment without space");
+test_case.Add_Stimuli(str: "--comment");
+test_case.Expect_Comment( value: "comment");
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Comment with space");
+test_case.Add_Stimuli(str: "-- comment");
+test_case.Expect_Comment( value: " comment");
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Comment with dashes");
+test_case.Add_Stimuli(str: "----");
+test_case.Expect_Comment( value: "--");
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Identifiers");
+test_case.Add_Stimuli(str: "identifier _identifier Identifier_");
+test_case.Expect_Identifier(name: "identifier");
+test_case.Expect_Identifier(name: "_identifier");
+test_case.Expect_Identifier(name: "Identifier_");
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Integers");
+test_case.Add_Stimuli(str: "1 -1 9999 -9999 ");
+test_case.Expect_Integer(value: 1);
+test_case.Expect_Integer(value: -1);
+test_case.Expect_Integer(value: 9999);
+test_case.Expect_Integer(value: -9999);
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Reals");
+test_case.Add_Stimuli(str: " 3.14 -3.14");
+test_case.Expect_Real(value: 3.14);
+test_case.Expect_Real(value: -3.14);
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Unique Ids");
+s = STR::From_ASCII_Code(code: ASCII_QUOTATION_MARK);
+s = s + "749663c7-a7d3-4e5c-a651-05bdbde32522";
+s = s + STR::From_ASCII_Code(code: ASCII_QUOTATION_MARK);
+s = s + " ";
+s = s + STR::From_ASCII_Code(code: ASCII_QUOTATION_MARK);
+s = s + "00000000-0000-0000-0000-000000000000";
+s = s + STR::From_ASCII_Code(code: ASCII_QUOTATION_MARK);
+
+test_case.Add_Stimuli(str: s);
+test_case.Expect_Unique_Id(value: STR::To_Unique_Id(value: "749663c7-a7d3-4e5c-a651-05bdbde32522"));
+test_case.Expect_Unique_Id(value: STR::To_Unique_Id(value: "00000000-0000-0000-0000-000000000000"));
+test_case.Expect_End_Of_Stream();
+
+create object instance test_case of Test_Case;
+test_case.Initialize(suite_id: test_suite.id, title: "Strings");
+test_case.Add_Stimuli(str: "'''' '''''''' ''Hello world!''");
+test_case.Expect_String(value: "");
+test_case.Expect_String(value: "''");
+test_case.Expect_String(value: "Hello world!");
+test_case.Expect_End_Of_Stream();
+
+Execution::Schedule(suite_id: test_suite.id);
+Execution::Dispatch(session_id: test_suite.id);
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("1038928c-ed81-430d-9859-dc2c1eb6b7f0",
+	1,
+	"59225983-6b79-40a8-9291-aec76c132849",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("59225983-6b79-40a8-9291-aec76c132849",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"fbaf0df5-c1f9-4a61-9252-97e4aaa40cb9",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("fbaf0df5-c1f9-4a61-9252-97e4aaa40cb9",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'SQL_Tokenization_Testing',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../SQL_Tokenization_Testing.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("cbbf0dbd-f6d4-4674-8397-27bb067af432",
+	'sql_load_testing',
+	1,
+	'../../../sql_load_testing.xtuml');
