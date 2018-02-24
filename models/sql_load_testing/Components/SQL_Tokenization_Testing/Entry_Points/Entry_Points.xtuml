@@ -95,10 +95,12 @@ test_case.Expect_End_Of_Stream();
 
 create object instance test_case of Test_Case;
 test_case.Initialize(suite_id: test_suite.id, title: "Identifiers");
-test_case.Add_Stimuli(str: "identifier _identifier Identifier_");
+test_case.Add_Stimuli(str: "identifier _identifier 1C Identifier_ 1C");
 test_case.Expect_Identifier(name: "identifier");
 test_case.Expect_Identifier(name: "_identifier");
+test_case.Expect_Identifier(name: "1C");
 test_case.Expect_Identifier(name: "Identifier_");
+test_case.Expect_Identifier(name: "1C");
 test_case.Expect_End_Of_Stream();
 
 create object instance test_case of Test_Case;
