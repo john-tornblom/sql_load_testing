@@ -47,13 +47,18 @@ INSERT INTO O_ID
 	VALUES (0,
 	"91677dfc-5c5c-4cbb-a2a6-c7df37ef00d8");
 INSERT INTO O_OIDA
-	VALUES ("7c8ddd35-c8f4-4d73-ba1d-c654ca73a795",
+	VALUES ("f06614fc-0288-4dbb-839b-02f23c1c4e56",
 	"91677dfc-5c5c-4cbb-a2a6-c7df37ef00d8",
 	0,
-	'id');
+	'load_id');
 INSERT INTO O_ID
 	VALUES (1,
 	"91677dfc-5c5c-4cbb-a2a6-c7df37ef00d8");
+INSERT INTO O_OIDA
+	VALUES ("7c8ddd35-c8f4-4d73-ba1d-c654ca73a795",
+	"91677dfc-5c5c-4cbb-a2a6-c7df37ef00d8",
+	1,
+	'id');
 INSERT INTO O_ID
 	VALUES (2,
 	"91677dfc-5c5c-4cbb-a2a6-c7df37ef00d8");

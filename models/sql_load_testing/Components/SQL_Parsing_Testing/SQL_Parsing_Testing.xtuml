@@ -420,8 +420,20 @@ INSERT INTO SPR_PO
 	VALUES ("2e1d356a-eb97-49dd-a5da-62115a089b77",
 	'New',
 	'',
-	'',
-	3,
+	'if param.key_letter == "Class_A"
+	create object instance inst of Class_A;
+	return inst.load_id;
+	
+elif param.key_letter == "Class_B"
+	create object instance inst of Class_B;
+	return inst.load_id;
+	
+elif param.key_letter == "Class_C"
+	create object instance inst of Class_C;
+	return inst.load_id;
+end if;
+',
+	1,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("f3fdb84b-9a2d-458f-b0c2-3084e28fb912",
@@ -456,8 +468,11 @@ INSERT INTO SPR_PO
 	VALUES ("44384ff1-c4aa-47b6-a17b-297a059c99ed",
 	'Set_Integer',
 	'',
-	'',
-	3,
+	'if param.key_letter == "Class_B"
+	select any inst from instances of Class_B where (selected.load_id == param.instance_id);
+	if param.name == "id" inst.id = param.value; end if;
+end if;',
+	1,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("a60c367f-919e-4039-8698-72cd47095426",
@@ -510,8 +525,11 @@ INSERT INTO SPR_PO
 	VALUES ("f1dabc39-7b88-4d57-9fca-11b4209a7f1e",
 	'Set_String',
 	'',
-	'',
-	3,
+	'if param.key_letter == "Class_C"
+	select any inst from instances of Class_C where (selected.load_id == param.instance_id);
+	if param.name == "name" inst.name = param.value; end if;
+end if;',
+	1,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ac9f31f6-0ccc-44e0-8206-9c862b1d6eaf",

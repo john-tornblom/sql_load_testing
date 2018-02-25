@@ -54,8 +54,8 @@ Character_Stream::String(value: "INSERT INTO Class_C VALUES (1, ''Jacquelyn Mort
 Character_Stream::String(value: "INSERT INTO Class_C VALUES (2, ''Chelsea Williamson'', 3);");
 Character_Stream::String(value: "INSERT INTO Class_C VALUES (3, ''Felicia Warner'', 0);");
 
-Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_B (id) TO 1 Class_C (id);");
-Character_Stream::String(value: "CREATE ROP REF_ID R2 FROM 1C Class_C (id) PHRASE ''succeeds'' TO 1C Class_C (id) PHRASE ''precedes'';");
+Character_Stream::String(value: "CREATE ROP REF_ID R2 FROM 1C Class_C (id) TO 1 Class_B (id);");
+Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) PHRASE ''precedes'' TO 1C Class_C (id) PHRASE ''succeeds'';");
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
