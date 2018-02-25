@@ -86,12 +86,12 @@ INSERT INTO O_ATTR
 	VALUES ("cb10698e-c318-4682-a18c-5f1f3eb70f74",
 	"c9f72875-dc5a-437c-a729-4515a2cd6eeb",
 	"9a1f0b84-2ebc-4309-8b17-2e08198a1fae",
-	'id',
+	'B_id',
 	'',
-	'',
+	'B_',
 	'id',
-	0,
-	"ba5eda7a-def5-0000-0000-000000000002",
+	1,
+	"ba5eda7a-def5-0000-0000-000000000007",
 	'',
 	'');
 INSERT INTO O_REF
@@ -108,7 +108,7 @@ INSERT INTO O_REF
 	0,
 	'',
 	'Class_C',
-	'id',
+	'B_id',
 	'R1.''precedes''');
 INSERT INTO R_RGO_PROXY
 	VALUES ("c9f72875-dc5a-437c-a729-4515a2cd6eeb",
@@ -138,7 +138,7 @@ INSERT INTO O_ATTR
 	'next_',
 	'id',
 	1,
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-000000000007",
 	'',
 	'');
 INSERT INTO O_ID
@@ -159,7 +159,7 @@ INSERT INTO O_OIDA
 	VALUES ("cb10698e-c318-4682-a18c-5f1f3eb70f74",
 	"c9f72875-dc5a-437c-a729-4515a2cd6eeb",
 	2,
-	'id');
+	'B_id');
 INSERT INTO PE_PE
 	VALUES ("c9f72875-dc5a-437c-a729-4515a2cd6eeb",
 	1,

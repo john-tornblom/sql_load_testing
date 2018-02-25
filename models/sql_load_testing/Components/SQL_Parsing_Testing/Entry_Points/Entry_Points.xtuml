@@ -36,26 +36,25 @@ INSERT INTO DIM_DIA
 INSERT INTO S_SYNC
 	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
 	"00000000-0000-0000-0000-000000000000",
-	'Parse',
+	'Execute',
 	'',
 	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
 
 Character_Stream::String(value: "CREATE TABLE Class_A ();");
-Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
-Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
-
 Character_Stream::String(value: "CREATE TABLE Class_B (id INTEGER);");
+Character_Stream::String(value: "CREATE TABLE Class_C (B_id INTEGER, name STRING, next_id INTEGER);");
+	
+Character_Stream::String(value: "CREATE ROP REF_ID R2 FROM 1C Class_C (B_id) TO 1 Class_B (id);");
+Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) PHRASE ''precedes'' TO 1C Class_C (B_id) PHRASE ''succeeds'';");
+	
+Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
 Character_Stream::String(value: "INSERT INTO Class_B VALUES (1);");
-Character_Stream::String(value: "INSERT INTO Class_B VALUES (2);");
-Character_Stream::String(value: "INSERT INTO Class_B VALUES (3);");
-
-Character_Stream::String(value: "CREATE TABLE Class_C (id INTEGER, name STRING, next_id INTEGER);");
 Character_Stream::String(value: "INSERT INTO Class_C VALUES (1, ''Jacquelyn Morton'', 2);");
 Character_Stream::String(value: "INSERT INTO Class_C VALUES (2, ''Chelsea Williamson'', 3);");
+Character_Stream::String(value: "INSERT INTO Class_B VALUES (2);");
+Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
+Character_Stream::String(value: "INSERT INTO Class_B VALUES (3);");
 Character_Stream::String(value: "INSERT INTO Class_C VALUES (3, ''Felicia Warner'', 0);");
-
-Character_Stream::String(value: "CREATE ROP REF_ID R2 FROM 1C Class_C (id) TO 1 Class_B (id);");
-Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) PHRASE ''precedes'' TO 1C Class_C (id) PHRASE ''succeeds'';");
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
@@ -63,22 +62,6 @@ Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) 
 	0);
 INSERT INTO PE_PE
 	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
-	1,
-	"42092617-b945-421d-a473-7f754f8701f8",
-	"00000000-0000-0000-0000-000000000000",
-	1);
-INSERT INTO S_SYNC
-	VALUES ("616ef425-8b6b-4ad5-b4d0-a52736abe732",
-	"00000000-0000-0000-0000-000000000000",
-	'Synchronize',
-	'',
-	' Instance_Stream::Synchronize();',
-	"ba5eda7a-def5-0000-0000-000000000000",
-	1,
-	'',
-	0);
-INSERT INTO PE_PE
-	VALUES ("616ef425-8b6b-4ad5-b4d0-a52736abe732",
 	1,
 	"42092617-b945-421d-a473-7f754f8701f8",
 	"00000000-0000-0000-0000-000000000000",

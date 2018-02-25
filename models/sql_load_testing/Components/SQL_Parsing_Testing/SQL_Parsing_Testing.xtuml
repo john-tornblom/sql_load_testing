@@ -395,24 +395,6 @@ INSERT INTO C_P
 	'',
 	'SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO SPR_PEP
-	VALUES ("1468d268-7933-4a46-8400-18fd238ec4e4",
-	"7725afda-5143-482e-afb1-12ca3f8a605c",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
-INSERT INTO SPR_PO
-	VALUES ("1468d268-7933-4a46-8400-18fd238ec4e4",
-	'End_Of_Stream',
-	'',
-	'',
-	1,
-	0);
-INSERT INTO C_EP_PROXY
-	VALUES ("7725afda-5143-482e-afb1-12ca3f8a605c",
-	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
-	-1,
-	'End_Of_Stream',
-	'',
-	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
-INSERT INTO SPR_PEP
 	VALUES ("2e1d356a-eb97-49dd-a5da-62115a089b77",
 	"f3fdb84b-9a2d-458f-b0c2-3084e28fb912",
 	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
@@ -420,7 +402,9 @@ INSERT INTO SPR_PO
 	VALUES ("2e1d356a-eb97-49dd-a5da-62115a089b77",
 	'New',
 	'',
-	'if param.key_letter == "Class_A"
+	'Log::Debug(msg: "create object instance of " + param.key_letter);
+
+if param.key_letter == "Class_A"
 	create object instance inst of Class_A;
 	return inst.load_id;
 	
@@ -450,7 +434,11 @@ INSERT INTO SPR_PO
 	VALUES ("5d5e9c87-37ba-45b4-8081-1944a624e496",
 	'Connect',
 	'',
-	'if param.rel_id == "R2"
+	'Log::Debug(msg: "relate " + param.from_key_letter + "(" + STR::From_Unique_Id( value: param.from_id) + ") " +
+				"to " + param.to_key_letter + "(" + STR::From_Unique_Id( value: param.to_id) + ") " +
+				"across " + param.rel_id);
+				
+if param.rel_id == "R2"
 	select any from_inst from instances of Class_C 
 			where (selected.load_id == param.from_id);
 			
@@ -465,11 +453,7 @@ elif param.rel_id == "R1"
 	select any to_inst from instances of Class_C
 			where (selected.load_id == param.to_id);
 	
-	if param.phrase == "precedes"		
-		relate from_inst to to_inst across R1.''precedes'';
-	else
-		relate from_inst to to_inst across R1.''succeeds'';
-	end if;
+	relate from_inst to to_inst across R1.''succeeds'';
 end if;
 ',
 	1,
@@ -557,24 +541,6 @@ INSERT INTO C_EP_PROXY
 	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
 	-1,
 	'Set_String',
-	'',
-	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
-INSERT INTO SPR_PEP
-	VALUES ("650f91dc-2967-4e50-8802-219b84c9f423",
-	"b6aa1852-0da4-4e9a-96de-40a375cb59e6",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
-INSERT INTO SPR_PO
-	VALUES ("650f91dc-2967-4e50-8802-219b84c9f423",
-	'Synchronize',
-	'',
-	'',
-	3,
-	0);
-INSERT INTO C_EP_PROXY
-	VALUES ("b6aa1852-0da4-4e9a-96de-40a375cb59e6",
-	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
-	-1,
-	'Synchronize',
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO C_I_PROXY

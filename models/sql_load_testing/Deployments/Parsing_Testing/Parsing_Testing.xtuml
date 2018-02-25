@@ -53,7 +53,7 @@ INSERT INTO DIM_ELE
 INSERT INTO DIM_CON
 	VALUES ("48b69571-0cba-4ce2-8e75-968988c81d63",
 	4164.000000,
-	3216.000000,
+	3227.000000,
 	"89bb72e9-be44-4a64-83d6-cd5d53013ab1");
 INSERT INTO DIM_CON
 	VALUES ("7c751b62-0773-4bf0-93bf-d807d3390594",
@@ -73,7 +73,7 @@ INSERT INTO GD_NCS
 	VALUES ("7ea4b314-bded-40b1-a523-a024609a1cd6");
 INSERT INTO DIM_ND
 	VALUES (241.000000,
-	156.000000,
+	144.000000,
 	"7ea4b314-bded-40b1-a523-a024609a1cd6");
 INSERT INTO DIM_GE
 	VALUES (4572.000000,
@@ -134,8 +134,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"bf745862-47fb-4029-a92c-9e4041f79830");
 INSERT INTO DIM_GE
-	VALUES (4071.000000,
-	3340.000000,
+	VALUES (4079.000000,
+	3335.000000,
 	"bf745862-47fb-4029-a92c-9e4041f79830",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -179,7 +179,7 @@ INSERT INTO GD_AOS
 INSERT INTO DIM_WAY
 	VALUES ("eb7182bc-b7fe-44f7-b993-80d08e8a057a",
 	4164.000000,
-	3216.000000,
+	3227.000000,
 	"eede445f-0179-403b-bb11-2782a6777031",
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000");
@@ -193,7 +193,7 @@ INSERT INTO DIM_WAY
 INSERT INTO DIM_WAY
 	VALUES ("34fe91b7-9b99-4333-ac75-b4422c9d7f23",
 	4056.000000,
-	3216.000000,
+	3227.000000,
 	"eede445f-0179-403b-bb11-2782a6777031",
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000");
@@ -429,7 +429,7 @@ INSERT INTO GD_GE
 	"3ed2df0b-03f3-44c5-b5aa-c3236df49db8",
 	106,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing::Output::SQL_Instance_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("f9163fa6-9f98-4def-8898-2e3c5ef181f7",
 	"00000000-0000-0000-0000-000000000000");
@@ -576,7 +576,7 @@ INSERT INTO GD_GE
 	"4a083008-ecc6-4bed-9918-2ca04253a486",
 	105,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Port2::SQL_Instance_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("c0ee586b-1456-4c18-a788-1c4a1834cd13",
 	"00000000-0000-0000-0000-000000000000");
@@ -697,7 +697,7 @@ INSERT INTO GD_GE
 	"73a226fa-5a87-4721-9999-ab133764a401",
 	106,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Port1::Character_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Character_Stream::Character_Stream');
 INSERT INTO GD_CON
 	VALUES ("dbf1402e-161d-43a9-841c-2e25f96a9b42",
 	"00000000-0000-0000-0000-000000000000");
@@ -943,7 +943,7 @@ INSERT INTO C_PO_PROXY
 INSERT INTO CL_POR
 	VALUES ("80e0145f-c920-4b72-bf6c-976c6e6b0da2",
 	"4b58c7aa-49e0-4879-90c7-2b18d8a39c0a",
-	'Output',
+	'Instance_Stream',
 	"2acf9217-b99d-4631-a12f-8b64326b6e65");
 INSERT INTO CL_IIR
 	VALUES ("3ed2df0b-03f3-44c5-b5aa-c3236df49db8",
@@ -966,7 +966,7 @@ INSERT INTO C_IR_PROXY
 INSERT INTO C_PO_PROXY
 	VALUES ("4b58c7aa-49e0-4879-90c7-2b18d8a39c0a",
 	"87713dd9-6486-4d1b-ab2c-50cc800cf593",
-	'Output',
+	'Instance_Stream',
 	0,
 	0,
 	'../../../../../sql_load/models/sql_load/Components/SQL_Parsing/SQL_Parsing.xtuml');
@@ -999,7 +999,7 @@ INSERT INTO CL_IC
 INSERT INTO CL_POR
 	VALUES ("7f7e6a1b-de37-478f-be81-6ac03a44e363",
 	"952bfc34-b6cf-43f3-8336-61befd5c908c",
-	'Port1',
+	'Character_Stream',
 	"2de3ed21-291a-48a8-bf57-68c88e68c2a6");
 INSERT INTO CL_IIR
 	VALUES ("73a226fa-5a87-4721-9999-ab133764a401",
@@ -1022,14 +1022,14 @@ INSERT INTO C_IR_PROXY
 INSERT INTO C_PO_PROXY
 	VALUES ("952bfc34-b6cf-43f3-8336-61befd5c908c",
 	"87e85512-68d9-4aae-9021-60dfd84e6a76",
-	'Port1',
+	'Character_Stream',
 	0,
 	0,
 	'../../Components/SQL_Parsing_Testing/SQL_Parsing_Testing.xtuml');
 INSERT INTO CL_POR
 	VALUES ("7f7e6a1b-de37-478f-be81-6ac03a44e363",
 	"24e65b92-e566-4930-b5ba-9de088ee49c8",
-	'Port2',
+	'Instance_Stream',
 	"7f42110c-4a4e-4792-9bb9-32069a8192e8");
 INSERT INTO CL_IIR
 	VALUES ("4a083008-ecc6-4bed-9918-2ca04253a486",
@@ -1054,7 +1054,7 @@ INSERT INTO C_IR_PROXY
 INSERT INTO C_PO_PROXY
 	VALUES ("24e65b92-e566-4930-b5ba-9de088ee49c8",
 	"87e85512-68d9-4aae-9021-60dfd84e6a76",
-	'Port2',
+	'Instance_Stream',
 	0,
 	0,
 	'../../Components/SQL_Parsing_Testing/SQL_Parsing_Testing.xtuml');
@@ -1106,7 +1106,7 @@ INSERT INTO C_SF
 	"5d86e2f3-6251-4a73-8224-b875dd53f848",
 	"88d36223-0cf5-4f3b-a40e-ec61310b3885",
 	'',
-	'SQL_Parsing_Testing::Port2::SQL_Instance_Stream -o)- SQL_Parsing::Output::SQL_Instance_Stream');
+	'SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream -o)- SQL_Parsing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO PE_PE
 	VALUES ("3c09cff0-e1b6-4c0f-8e24-f65b613ebc64",
 	1,
@@ -1118,21 +1118,21 @@ INSERT INTO C_R_PROXY
 	'SQL_Instance_Stream',
 	'',
 	'Unnamed Interface',
-	'SQL_Parsing::Output::SQL_Instance_Stream',
+	'SQL_Parsing::Instance_Stream::SQL_Instance_Stream',
 	'../../../../../sql_load/models/sql_load/Components/SQL_Parsing/SQL_Parsing.xtuml');
 INSERT INTO C_P_PROXY
 	VALUES ("88d36223-0cf5-4f3b-a40e-ec61310b3885",
 	'SQL_Instance_Stream',
 	'Unnamed Interface',
 	'',
-	'SQL_Parsing_Testing::Port2::SQL_Instance_Stream',
+	'SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream',
 	'../../Components/SQL_Parsing_Testing/SQL_Parsing_Testing.xtuml');
 INSERT INTO C_SF
 	VALUES ("c7eaf8db-5636-41a4-8aed-d3d4f09d4df0",
 	"84efe997-f122-409f-984f-acc9085c1b47",
 	"0fcdb5ee-dc86-45ee-8c6f-3033751e0224",
 	'',
-	'SQL_Tokenization::Input::Character_Stream -o)- SQL_Parsing_Testing::Port1::Character_Stream');
+	'SQL_Tokenization::Input::Character_Stream -o)- SQL_Parsing_Testing::Character_Stream::Character_Stream');
 INSERT INTO PE_PE
 	VALUES ("c7eaf8db-5636-41a4-8aed-d3d4f09d4df0",
 	1,
@@ -1144,7 +1144,7 @@ INSERT INTO C_R_PROXY
 	'Character_Stream',
 	'',
 	'Unnamed Interface',
-	'SQL_Parsing_Testing::Port1::Character_Stream',
+	'SQL_Parsing_Testing::Character_Stream::Character_Stream',
 	'../../Components/SQL_Parsing_Testing/SQL_Parsing_Testing.xtuml');
 INSERT INTO C_P_PROXY
 	VALUES ("0fcdb5ee-dc86-45ee-8c6f-3033751e0224",
