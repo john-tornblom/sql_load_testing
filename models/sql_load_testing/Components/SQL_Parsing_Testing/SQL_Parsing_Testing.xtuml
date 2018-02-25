@@ -559,6 +559,24 @@ INSERT INTO C_EP_PROXY
 	'Set_String',
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("650f91dc-2967-4e50-8802-219b84c9f423",
+	"b6aa1852-0da4-4e9a-96de-40a375cb59e6",
+	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+INSERT INTO SPR_PO
+	VALUES ("650f91dc-2967-4e50-8802-219b84c9f423",
+	'Synchronize',
+	'',
+	'',
+	3,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("b6aa1852-0da4-4e9a-96de-40a375cb59e6",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Synchronize',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
 	"00000000-0000-0000-0000-000000000000",

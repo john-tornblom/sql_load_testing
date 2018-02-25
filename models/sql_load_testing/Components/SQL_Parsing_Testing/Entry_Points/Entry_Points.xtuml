@@ -36,7 +36,7 @@ INSERT INTO DIM_DIA
 INSERT INTO S_SYNC
 	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
 	"00000000-0000-0000-0000-000000000000",
-	'Execute',
+	'Parse',
 	'',
 	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
 
@@ -63,6 +63,22 @@ Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) 
 	0);
 INSERT INTO PE_PE
 	VALUES ("86cdbb3b-2621-4632-8d6b-d48c17ef57eb",
+	1,
+	"42092617-b945-421d-a473-7f754f8701f8",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("616ef425-8b6b-4ad5-b4d0-a52736abe732",
+	"00000000-0000-0000-0000-000000000000",
+	'Synchronize',
+	'',
+	' Instance_Stream::Synchronize();',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("616ef425-8b6b-4ad5-b4d0-a52736abe732",
 	1,
 	"42092617-b945-421d-a473-7f754f8701f8",
 	"00000000-0000-0000-0000-000000000000",
