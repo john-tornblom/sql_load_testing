@@ -735,7 +735,7 @@ INSERT INTO GD_GE
 	"84efe997-f122-409f-984f-acc9085c1b47",
 	93,
 	0,
-	'sql_load_testing::Components::SQL_Parsing_Testing::Port1::Unnamed Interface');
+	'sql_load_testing::Components::SQL_Parsing_Testing::Character_Stream::Character_Stream');
 INSERT INTO GD_CON
 	VALUES ("1e4953b8-8419-4f80-92c6-5d15f677d54f",
 	"00000000-0000-0000-0000-000000000000");
@@ -835,7 +835,7 @@ INSERT INTO GD_GE
 	"88d36223-0cf5-4f3b-a40e-ec61310b3885",
 	94,
 	0,
-	'sql_load_testing::Components::SQL_Parsing_Testing::Port2::SQL_Instance_Stream');
+	'sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("7a4e0ff2-4516-4913-97c1-d28ab7e6ef53",
 	"00000000-0000-0000-0000-000000000000");

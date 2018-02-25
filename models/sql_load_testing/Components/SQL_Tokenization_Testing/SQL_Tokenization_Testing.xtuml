@@ -1634,7 +1634,7 @@ INSERT INTO SPR_RS
 	'String',
 	'',
 	'',
-	3,
+	1,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("8a3f1fe8-30c1-4ad8-a0c7-ad4a34eed8b1",
@@ -1652,7 +1652,7 @@ INSERT INTO SPR_RS
 	'File',
 	'',
 	'',
-	3,
+	1,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("d702798f-1fd3-4f0e-9263-cbec087e990b",

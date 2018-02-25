@@ -496,7 +496,7 @@ INSERT INTO O_OIDA_PROXY
 	VALUES ("cb10698e-c318-4682-a18c-5f1f3eb70f74",
 	"c9f72875-dc5a-437c-a729-4515a2cd6eeb",
 	2,
-	'id',
+	'B_id',
 	'./Class_C/Class_C.xtuml');
 INSERT INTO R_RTO
 	VALUES ("c9f72875-dc5a-437c-a729-4515a2cd6eeb",
