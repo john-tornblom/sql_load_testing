@@ -645,11 +645,6 @@ INSERT INTO SPR_PO
   end if;
 end if;
 if param.key_letter == "Class_D"
-  if param.name == "my_boolean"
-    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
-    inst.my_boolean = param.value != 0;
-    return;
-  end if;
   if param.name == "my_integer"
     select any inst from instances of Class_D where (selected.load_id == param.instance_id);
     inst.my_integer = param.value;
@@ -770,6 +765,27 @@ INSERT INTO C_EP_PROXY
 	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
 	-1,
 	'Set_String',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("93b50017-812c-43b0-8974-afd6469a1127",
+	"62d325bc-33b3-42be-8aec-73b78ca7d730",
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
+INSERT INTO SPR_PO
+	VALUES ("93b50017-812c-43b0-8974-afd6469a1127",
+	'Set_Boolean',
+	'',
+	'if param.key_letter == "Class_D" and param.name == "my_boolean"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_boolean = param.value;
+end if;',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("62d325bc-33b3-42be-8aec-73b78ca7d730",
+	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
+	-1,
+	'Set_Boolean',
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO C_I_PROXY
