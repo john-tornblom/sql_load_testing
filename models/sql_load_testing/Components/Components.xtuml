@@ -840,7 +840,7 @@ INSERT INTO GD_GE
 	"76166be7-cdd5-4e02-98db-d63440abb0d8",
 	94,
 	0,
-	'sql_load_testing::Components::SQL_Parsing_Testing::Port1::SQL_Instance_Stream');
+	'sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("dd27e95c-a07a-431f-bc74-53ea9e933a73",
 	"00000000-0000-0000-0000-000000000000");
