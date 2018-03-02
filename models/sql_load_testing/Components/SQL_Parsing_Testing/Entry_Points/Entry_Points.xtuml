@@ -40,21 +40,254 @@ INSERT INTO S_SYNC
 	'',
 	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
 
-Character_Stream::String(value: "CREATE TABLE Class_A ();");
-Character_Stream::String(value: "CREATE TABLE Class_B (id INTEGER);");
-Character_Stream::String(value: "CREATE TABLE Class_C (B_id INTEGER, name STRING, next_id INTEGER);");
-	
-Character_Stream::String(value: "CREATE ROP REF_ID R2 FROM 1C Class_C (B_id) TO 1 Class_B (id);");
-Character_Stream::String(value: "CREATE ROP REF_ID R1 FROM 1C Class_C (next_id) PHRASE ''precedes'' TO 1C Class_C (B_id) PHRASE ''succeeds'';");
-	
-Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
-Character_Stream::String(value: "INSERT INTO Class_B VALUES (1);");
-Character_Stream::String(value: "INSERT INTO Class_C VALUES (1, ''Jacquelyn Morton'', 2);");
-Character_Stream::String(value: "INSERT INTO Class_C VALUES (2, ''Chelsea Williamson'', 3);");
-Character_Stream::String(value: "INSERT INTO Class_B VALUES (2);");
-Character_Stream::String(value: "INSERT INTO Class_A VALUES ();");
-Character_Stream::String(value: "INSERT INTO Class_B VALUES (3);");
-Character_Stream::String(value: "INSERT INTO Class_C VALUES (3, ''Felicia Warner'', 0);");
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "TABLE");
+Token_Stream::Identifier(name: "Class_A");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "id");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "TABLE");
+Token_Stream::Identifier(name: "Class_B");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "id");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "TABLE");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "B_id");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "name");
+Token_Stream::Identifier(name: "STRING");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "next_id");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "TABLE");
+Token_Stream::Identifier(name: "Class_D");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "my_boolean");
+Token_Stream::Identifier(name: "BOOLEAN");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "my_integer");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "my_real");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "my_enum");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "my_string");
+Token_Stream::Identifier(name: "STRING");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "my_unique_id");
+Token_Stream::Identifier(name: "UNIQUE_ID");
+Token_Stream::Comma();
+Token_Stream::Identifier(name: "A_id");
+Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "ROP");
+Token_Stream::Identifier(name: "REF_ID");
+Token_Stream::Identifier(name: "R1");
+Token_Stream::Identifier(name: "FROM");
+Token_Stream::Identifier(name: "1C");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "B_id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Identifier(name: "TO");
+Token_Stream::Integer(value: 1);
+Token_Stream::Identifier(name: "Class_B");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "ROP");
+Token_Stream::Identifier(name: "REF_ID");
+Token_Stream::Identifier(name: "R3");
+Token_Stream::Identifier(name: "FROM");
+Token_Stream::Identifier(name: "1C");
+Token_Stream::Identifier(name: "Class_D");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "A_id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Identifier(name: "TO");
+Token_Stream::Integer(value: 1);
+Token_Stream::Identifier(name: "Class_A");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "CREATE");
+Token_Stream::Identifier(name: "ROP");
+Token_Stream::Identifier(name: "REF_ID");
+Token_Stream::Identifier(name: "R2");
+Token_Stream::Identifier(name: "FROM");
+Token_Stream::Identifier(name: "1C");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "next_id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Identifier(name: "PHRASE");
+Token_Stream::String(value: "precedes");
+Token_Stream::Identifier(name: "TO");
+Token_Stream::Identifier(name: "1C");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Identifier(name: "B_id");
+Token_Stream::Right_Parenthesis();
+Token_Stream::Identifier(name: "PHRASE");
+Token_Stream::String(value: "succeeds");
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_D");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::Real(value: 3.14);
+Token_Stream::Comma();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::String(value: "Hello world!");
+Token_Stream::Comma();
+Token_Stream::Unique_Id(value: STR::To_Unique_Id( value: "bc747202-7e36-484a-ae38-585173bb160b"));
+Token_Stream::Comma();
+Token_Stream::Integer(value: 1);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_D");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::Real(value: 3.14);
+Token_Stream::Comma();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::String(value: "Hello world!");
+Token_Stream::Comma();
+Token_Stream::Unique_Id(value: STR::To_Unique_Id( value: "bc747202-7e36-484a-ae38-585173bb160b"));
+Token_Stream::Comma();
+Token_Stream::Integer(value: 2);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_A");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 1);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_B");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 1);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 1);
+Token_Stream::Comma();
+Token_Stream::String(value: "Jacquelyn Morton");
+Token_Stream::Comma();
+Token_Stream::Integer(value: 2);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 2);
+Token_Stream::Comma();
+Token_Stream::String(value: "Chelsea Williamson");
+Token_Stream::Comma();
+Token_Stream::Integer(value: 3);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_B");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 2);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_A");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 2);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_B");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 3);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
+Token_Stream::Identifier(name: "INSERT");
+Token_Stream::Identifier(name: "INTO");
+Token_Stream::Identifier(name: "Class_C");
+Token_Stream::Identifier(name: "VALUES");
+Token_Stream::Left_Parenthesis();
+Token_Stream::Integer(value: 3);
+Token_Stream::Comma();
+Token_Stream::String(value: "Felicia Warner");
+Token_Stream::Comma();
+Token_Stream::Integer(value: 0);
+Token_Stream::Right_Parenthesis();
+Token_Stream::Semicolon();
+
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,

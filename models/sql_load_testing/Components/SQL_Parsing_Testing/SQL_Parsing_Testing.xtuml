@@ -27,7 +27,7 @@ INSERT INTO GD_MD
 	200,
 	150,
 	0,
-	'',
+	'4.1.17',
 	'sql_load_testing::Components::SQL_Parsing_Testing');
 INSERT INTO GD_GE
 	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b",
@@ -41,7 +41,7 @@ INSERT INTO GD_SHP
 INSERT INTO GD_CTR
 	VALUES ("ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
 INSERT INTO DIM_ND
-	VALUES (1165.000000,
+	VALUES (1385.000000,
 	490.000000,
 	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
 INSERT INTO DIM_GE
@@ -63,13 +63,18 @@ INSERT INTO DIM_CON
 	4488.000000,
 	3100.000000,
 	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO DIM_CON
+	VALUES ("bfef30c4-b61c-46e5-bb56-211b4a38768a",
+	5485.000000,
+	3216.000000,
+	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
 INSERT INTO GD_GE
 	VALUES ("ef160470-794c-45c7-9f62-7d031b34ba97",
 	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
 	"84efe997-f122-409f-984f-acc9085c1b47",
 	93,
 	0,
-	'sql_load_testing::Components::SQL_Parsing_Testing::Character_Stream::Character_Stream');
+	'sql_load_testing::Components::SQL_Parsing_Testing::Token_Stream::SQL_Token_Stream');
 INSERT INTO GD_CON
 	VALUES ("ef160470-794c-45c7-9f62-7d031b34ba97",
 	"00000000-0000-0000-0000-000000000000");
@@ -103,8 +108,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"b494cddc-0fca-410e-b722-921f5ba51344");
 INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
+	VALUES (4314.000000,
+	3617.000000,
 	"b494cddc-0fca-410e-b722-921f5ba51344",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -164,106 +169,6 @@ INSERT INTO DIM_ED
 	"00000000-0000-0000-0000-000000000000",
 	"ef160470-794c-45c7-9f62-7d031b34ba97");
 INSERT INTO GD_GE
-	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885",
-	94,
-	0,
-	'sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
-INSERT INTO GD_CON
-	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO GD_CTXT
-	VALUES ("e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	1,
-	0.000000,
-	0.000000);
-INSERT INTO DIM_ND
-	VALUES (0.000000,
-	0.000000,
-	"e0e9947b-edf1-4715-80f1-8e81e1b68dfe");
-INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
-	"e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_ELE
-	VALUES ("e0e9947b-edf1-4715-80f1-8e81e1b68dfe",
-	0,
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO GD_CTXT
-	VALUES ("f0146777-e738-4513-b542-562123894d4e",
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	3,
-	0.000000,
-	0.000000);
-INSERT INTO DIM_ND
-	VALUES (0.000000,
-	0.000000,
-	"f0146777-e738-4513-b542-562123894d4e");
-INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
-	"f0146777-e738-4513-b542-562123894d4e",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_ELE
-	VALUES ("f0146777-e738-4513-b542-562123894d4e",
-	0,
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO GD_CTXT
-	VALUES ("b3c352fe-aaaa-43d9-8217-7beae458f7ea",
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	2,
-	0.000000,
-	0.000000);
-INSERT INTO DIM_ND
-	VALUES (0.000000,
-	0.000000,
-	"b3c352fe-aaaa-43d9-8217-7beae458f7ea");
-INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
-	"b3c352fe-aaaa-43d9-8217-7beae458f7ea",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_ELE
-	VALUES ("b3c352fe-aaaa-43d9-8217-7beae458f7ea",
-	0,
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO GD_LS
-	VALUES ("847a522f-c76e-4465-a361-aba20217ed8d",
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"00000000-0000-0000-0000-000000000000",
-	"faa808b8-ac03-4f5f-b5b7-88169a30f584",
-	"50dd8ae6-9ca7-4128-a981-eff3db1c69fe");
-INSERT INTO DIM_WAY
-	VALUES ("faa808b8-ac03-4f5f-b5b7-88169a30f584",
-	4488.000000,
-	3100.000000,
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"00000000-0000-0000-0000-000000000000",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_WAY
-	VALUES ("50dd8ae6-9ca7-4128-a981-eff3db1c69fe",
-	4485.000000,
-	3030.000000,
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"00000000-0000-0000-0000-000000000000",
-	"faa808b8-ac03-4f5f-b5b7-88169a30f584");
-INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_ELE
-	VALUES ("68d15e3a-1994-4247-aa00-d4a3a99ec9c2",
-	0,
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_ED
-	VALUES ("ff31baae-2d36-4912-99dc-a30289ca70fd",
-	"00000000-0000-0000-0000-000000000000",
-	"68d15e3a-1994-4247-aa00-d4a3a99ec9c2");
-INSERT INTO GD_GE
 	VALUES ("979d4811-9978-4358-8ad7-ed8f99c303ea",
 	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
 	"42092617-b945-421d-a473-7f754f8701f8",
@@ -311,6 +216,106 @@ INSERT INTO DIM_ELE
 	VALUES ("ecf35edb-d962-4e20-8d9d-3da1cbaadd6e",
 	0,
 	"ff3cee0a-7b95-47f5-8274-eb7f078b1a7b");
+INSERT INTO GD_GE
+	VALUES ("c5715904-197e-4a53-ac01-6579a74919f5",
+	"245f3aee-38c8-44d4-b845-2cdb0d78cf87",
+	"76166be7-cdd5-4e02-98db-d63440abb0d8",
+	94,
+	0,
+	'sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
+INSERT INTO GD_CON
+	VALUES ("c5715904-197e-4a53-ac01-6579a74919f5",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("fe68e160-b04a-447e-abcd-652ccb22405f",
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"fe68e160-b04a-447e-abcd-652ccb22405f");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"fe68e160-b04a-447e-abcd-652ccb22405f",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("fe68e160-b04a-447e-abcd-652ccb22405f",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("6f67a73c-8238-4d00-8631-89f40c3fc9ee",
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	3,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"6f67a73c-8238-4d00-8631-89f40c3fc9ee");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"6f67a73c-8238-4d00-8631-89f40c3fc9ee",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("6f67a73c-8238-4d00-8631-89f40c3fc9ee",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("6aa87f28-f0db-460d-8b71-09e110c90990",
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"6aa87f28-f0db-460d-8b71-09e110c90990");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"6aa87f28-f0db-460d-8b71-09e110c90990",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("6aa87f28-f0db-460d-8b71-09e110c90990",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("87c0b7e8-883c-4597-ac26-1d13c430f14d",
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	"00000000-0000-0000-0000-000000000000",
+	"bcaa6008-262d-4aa7-a2ee-d063b53b2d8c",
+	"d550e87f-4267-4982-9e12-14001d9caf43");
+INSERT INTO DIM_WAY
+	VALUES ("bcaa6008-262d-4aa7-a2ee-d063b53b2d8c",
+	5485.000000,
+	3216.000000,
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("d550e87f-4267-4982-9e12-14001d9caf43",
+	5560.000000,
+	3216.000000,
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	"00000000-0000-0000-0000-000000000000",
+	"bcaa6008-262d-4aa7-a2ee-d063b53b2d8c");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"c5715904-197e-4a53-ac01-6579a74919f5",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("c5715904-197e-4a53-ac01-6579a74919f5",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("bfef30c4-b61c-46e5-bb56-211b4a38768a",
+	"00000000-0000-0000-0000-000000000000",
+	"c5715904-197e-4a53-ac01-6579a74919f5");
 INSERT INTO DIM_DIA
 	VALUES ("245f3aee-38c8-44d4-b845-2cdb0d78cf87",
 	'',
@@ -321,102 +326,267 @@ INSERT INTO DIM_DIA
 INSERT INTO C_PO
 	VALUES ("952bfc34-b6cf-43f3-8336-61befd5c908c",
 	"87e85512-68d9-4aae-9021-60dfd84e6a76",
-	'Character_Stream',
+	'Token_Stream',
 	0,
 	0);
 INSERT INTO C_IR
 	VALUES ("84efe997-f122-409f-984f-acc9085c1b47",
-	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
 	"00000000-0000-0000-0000-000000000000",
 	"952bfc34-b6cf-43f3-8336-61befd5c908c");
 INSERT INTO C_R
 	VALUES ("84efe997-f122-409f-984f-acc9085c1b47",
-	'Character_Stream',
+	'SQL_Token_Stream',
 	'',
 	'Unnamed Interface',
-	'SQL_Parsing_Testing::Character_Stream::Character_Stream');
+	'SQL_Parsing_Testing::Token_Stream::SQL_Token_Stream');
 INSERT INTO SPR_REP
-	VALUES ("a82812f1-1b19-41b7-b1ed-4f9f33db15d5",
-	"8a3f1fe8-30c1-4ad8-a0c7-ad4a34eed8b1",
+	VALUES ("3df32778-191c-4210-8927-ef9f88495be6",
+	"a4cf981f-000b-4171-9164-67b2707f5678",
 	"84efe997-f122-409f-984f-acc9085c1b47");
 INSERT INTO SPR_RS
-	VALUES ("a82812f1-1b19-41b7-b1ed-4f9f33db15d5",
+	VALUES ("3df32778-191c-4210-8927-ef9f88495be6",
 	'String',
 	'',
 	'',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
-	VALUES ("8a3f1fe8-30c1-4ad8-a0c7-ad4a34eed8b1",
-	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	VALUES ("a4cf981f-000b-4171-9164-67b2707f5678",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
 	-1,
 	'String',
 	'',
-	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
 INSERT INTO SPR_REP
-	VALUES ("ea5ba488-ecba-4126-b17a-2f7c8df9b152",
-	"d702798f-1fd3-4f0e-9263-cbec087e990b",
+	VALUES ("140d1016-cd1d-4658-a646-c894fc8b037e",
+	"9202727d-3607-41aa-ac87-8efc7bcbf73d",
 	"84efe997-f122-409f-984f-acc9085c1b47");
 INSERT INTO SPR_RS
-	VALUES ("ea5ba488-ecba-4126-b17a-2f7c8df9b152",
-	'File',
+	VALUES ("140d1016-cd1d-4658-a646-c894fc8b037e",
+	'Integer',
 	'',
 	'',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
-	VALUES ("d702798f-1fd3-4f0e-9263-cbec087e990b",
-	"09a35036-dc67-4be0-991d-26e9efcdea33",
+	VALUES ("9202727d-3607-41aa-ac87-8efc7bcbf73d",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
 	-1,
-	'File',
+	'Integer',
 	'',
-	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("47dbf1cb-bf5c-45dc-a81c-d2aa5e576892",
+	"1a43d92d-778e-44eb-977e-af45951d3d92",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("47dbf1cb-bf5c-45dc-a81c-d2aa5e576892",
+	'Real',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("1a43d92d-778e-44eb-977e-af45951d3d92",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Real',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("2301a6d7-2531-4efa-9518-6c10e17a42e6",
+	"94acd33a-ead1-4a8b-ba49-a62c6b78534a",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("2301a6d7-2531-4efa-9518-6c10e17a42e6",
+	'Identifier',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("94acd33a-ead1-4a8b-ba49-a62c6b78534a",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Identifier',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("9e9c65bb-acdb-4ea3-ab08-c8c02cb045cb",
+	"2fa78224-e8fd-4e52-a145-f5b3209f393c",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("9e9c65bb-acdb-4ea3-ab08-c8c02cb045cb",
+	'Comment',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("2fa78224-e8fd-4e52-a145-f5b3209f393c",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Comment',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("72c610e7-606e-4c40-bec8-e732bc9d87db",
+	"e10862af-ef74-4bcf-a20d-b2b9142018fb",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("72c610e7-606e-4c40-bec8-e732bc9d87db",
+	'Semicolon',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("e10862af-ef74-4bcf-a20d-b2b9142018fb",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Semicolon',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("bca0b603-7c6a-4678-8e06-79a4b6beaf26",
+	"65c15e54-62a6-462f-bc1c-284e19aa6177",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("bca0b603-7c6a-4678-8e06-79a4b6beaf26",
+	'Left_Parenthesis',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("65c15e54-62a6-462f-bc1c-284e19aa6177",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Left_Parenthesis',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("06231e24-2b29-4664-8b9d-5049627d0ae1",
+	"0a88cfe6-dc18-4420-b5a5-4bcd5b637376",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("06231e24-2b29-4664-8b9d-5049627d0ae1",
+	'Right_Parenthesis',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("0a88cfe6-dc18-4420-b5a5-4bcd5b637376",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Right_Parenthesis',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("f4be96be-c98d-41c3-abc3-fe9cd4237321",
+	"65d5a715-0d07-485a-afa5-f39ca55a869e",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("f4be96be-c98d-41c3-abc3-fe9cd4237321",
+	'Comma',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("65d5a715-0d07-485a-afa5-f39ca55a869e",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Comma',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("8069180c-263f-4e61-b4ec-7f9f747c0e13",
+	"7c4ef927-0d58-4ddc-a1d2-70d7502f9ec2",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("8069180c-263f-4e61-b4ec-7f9f747c0e13",
+	'Unique_Id',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("7c4ef927-0d58-4ddc-a1d2-70d7502f9ec2",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'Unique_Id',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("6b693e12-2c1b-4dfc-964e-6225ab1f9bc7",
+	"e20b31d9-3864-4c8d-ac88-9933b6f65a31",
+	"84efe997-f122-409f-984f-acc9085c1b47");
+INSERT INTO SPR_RS
+	VALUES ("6b693e12-2c1b-4dfc-964e-6225ab1f9bc7",
+	'End_Of_Stream',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("e20b31d9-3864-4c8d-ac88-9933b6f65a31",
+	"c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
+	-1,
+	'End_Of_Stream',
+	'',
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
 INSERT INTO C_I_PROXY
-	VALUES ("09a35036-dc67-4be0-991d-26e9efcdea33",
+	VALUES ("c0cb21dd-8fe4-4dca-9d87-829a6ace0f4f",
 	"00000000-0000-0000-0000-000000000000",
-	'Character_Stream',
+	'SQL_Token_Stream',
 	'',
-	'../../../../../sql_load/models/sql_load/Interfaces/Character_Stream/Character_Stream.xtuml');
+	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Token_Stream/SQL_Token_Stream.xtuml');
 INSERT INTO C_PO
-	VALUES ("24e65b92-e566-4930-b5ba-9de088ee49c8",
+	VALUES ("6a827e0b-f339-485a-92f4-dbf51db942be",
 	"87e85512-68d9-4aae-9021-60dfd84e6a76",
 	'Instance_Stream',
 	0,
 	0);
 INSERT INTO C_IR
-	VALUES ("88d36223-0cf5-4f3b-a40e-ec61310b3885",
+	VALUES ("76166be7-cdd5-4e02-98db-d63440abb0d8",
 	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
 	"00000000-0000-0000-0000-000000000000",
-	"24e65b92-e566-4930-b5ba-9de088ee49c8");
+	"6a827e0b-f339-485a-92f4-dbf51db942be");
 INSERT INTO C_P
-	VALUES ("88d36223-0cf5-4f3b-a40e-ec61310b3885",
+	VALUES ("76166be7-cdd5-4e02-98db-d63440abb0d8",
 	'SQL_Instance_Stream',
 	'Unnamed Interface',
 	'',
 	'SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO SPR_PEP
-	VALUES ("2e1d356a-eb97-49dd-a5da-62115a089b77",
+	VALUES ("9555e612-0326-4d25-a55c-dd93c0295c01",
 	"f3fdb84b-9a2d-458f-b0c2-3084e28fb912",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("2e1d356a-eb97-49dd-a5da-62115a089b77",
+	VALUES ("9555e612-0326-4d25-a55c-dd93c0295c01",
 	'New',
 	'',
-	'Log::Debug(msg: "create object instance of " + param.key_letter);
-
-if param.key_letter == "Class_A"
-	create object instance inst of Class_A;
-	return inst.load_id;
-	
-elif param.key_letter == "Class_B"
-	create object instance inst of Class_B;
-	return inst.load_id;
-	
-elif param.key_letter == "Class_C"
-	create object instance inst of Class_C;
-	return inst.load_id;
+	'if param.key_letter == "Class_A"
+    create object instance inst of Class_A;
+    return inst.load_id;
 end if;
-',
+if param.key_letter == "Class_C"
+    create object instance inst of Class_C;
+    return inst.load_id;
+end if;
+if param.key_letter == "Class_D"
+    create object instance inst of Class_D;
+    return inst.load_id;
+end if;
+if param.key_letter == "Class_B"
+    create object instance inst of Class_B;
+    return inst.load_id;
+end if;
+
+PROC::Assert( cond: false, msg: "Unknown class " + param.key_letter);',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
@@ -427,33 +597,27 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("5d5e9c87-37ba-45b4-8081-1944a624e496",
+	VALUES ("9680f2e1-10c7-4a8d-af9a-4cf32237aa79",
 	"b4ae3ff9-ce35-40c5-a48f-ec54e1b3637a",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("5d5e9c87-37ba-45b4-8081-1944a624e496",
+	VALUES ("9680f2e1-10c7-4a8d-af9a-4cf32237aa79",
 	'Connect',
 	'',
-	'Log::Debug(msg: "relate " + param.from_key_letter + "(" + STR::From_Unique_Id( value: param.from_id) + ") " +
-				"to " + param.to_key_letter + "(" + STR::From_Unique_Id( value: param.to_id) + ") " +
-				"across " + param.rel_id);
-				
-if param.rel_id == "R2"
-	select any from_inst from instances of Class_C 
-			where (selected.load_id == param.from_id);
-			
-	select any to_inst from instances of Class_B
-			where (selected.load_id == param.to_id);
-			
-	relate from_inst to to_inst across R2;
-elif param.rel_id == "R1"
-	select any from_inst from instances of Class_C 
-			where (selected.load_id == param.from_id);
-			
-	select any to_inst from instances of Class_C
-			where (selected.load_id == param.to_id);
-	
-	relate from_inst to to_inst across R1.''succeeds'';
+	'if param.rel_id == "R2" and param.from_key_letter == "Class_C" and param.to_key_letter == "Class_C"
+    select any from_inst from instances of Class_C where (selected.load_id == param.from_id);
+    select any to_inst from instances of Class_C where (selected.load_id == param.to_id);
+    relate from_inst to to_inst across R2.''succeeds'';
+end if;
+if param.rel_id == "R1" and param.from_key_letter == "Class_C" and param.to_key_letter == "Class_B"
+    select any from_inst from instances of Class_C where (selected.load_id == param.from_id);
+    select any to_inst from instances of Class_B where (selected.load_id == param.to_id);
+    relate from_inst to to_inst across R1;
+end if;
+if param.rel_id == "R3" and param.from_key_letter == "Class_D" and param.to_key_letter == "Class_A"
+    select any from_inst from instances of Class_D where (selected.load_id == param.from_id);
+    select any to_inst from instances of Class_A where (selected.load_id == param.to_id);
+    relate from_inst to to_inst across R3;
 end if;
 ',
 	1,
@@ -466,17 +630,57 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("44384ff1-c4aa-47b6-a17b-297a059c99ed",
+	VALUES ("0ad9a390-a0e8-44c0-a4d8-17375aac808a",
 	"a60c367f-919e-4039-8698-72cd47095426",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("44384ff1-c4aa-47b6-a17b-297a059c99ed",
+	VALUES ("0ad9a390-a0e8-44c0-a4d8-17375aac808a",
 	'Set_Integer',
 	'',
-	'if param.key_letter == "Class_B"
-	select any inst from instances of Class_B where (selected.load_id == param.instance_id);
-	if param.name == "id" inst.id = param.value; end if;
-end if;',
+	'if param.key_letter == "Class_A"
+  if param.name == "id"
+    select any inst from instances of Class_A where (selected.load_id == param.instance_id);
+    inst.id = param.value;
+    return;
+  end if;
+end if;
+if param.key_letter == "Class_D"
+  if param.name == "my_boolean"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_boolean = param.value != 0;
+    return;
+  end if;
+  if param.name == "my_integer"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_integer = param.value;
+    return;
+  end if;
+  if param.name == "my_enum"
+    if param.value == 0
+      select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+      inst.my_enum = My_Enum::Enum0;
+      return;
+    end if;
+    if param.value == 1
+      select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+      inst.my_enum = My_Enum::Enum1;
+      return;
+    end if;
+    if param.value == 2
+      select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+      inst.my_enum = My_Enum::Enum2;
+      return;
+    end if;
+  end if;
+end if;
+if param.key_letter == "Class_B"
+  if param.name == "id"
+    select any inst from instances of Class_B where (selected.load_id == param.instance_id);
+    inst.id = param.value;
+    return;
+  end if;
+end if;
+',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
@@ -487,14 +691,21 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("d5396492-18bb-420b-bf79-84b0928f1e9e",
+	VALUES ("26f695b8-2ecb-45c7-a996-a8f0c54f2d93",
 	"17d06a30-fdcb-4f02-a28e-46415e68b258",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("d5396492-18bb-420b-bf79-84b0928f1e9e",
+	VALUES ("26f695b8-2ecb-45c7-a996-a8f0c54f2d93",
 	'Set_Real',
 	'',
-	'',
+	'if param.key_letter == "Class_D"
+  if param.name == "my_real"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_real = param.value;
+    return;
+  end if;
+end if;
+',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
@@ -505,14 +716,21 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("e56ca70c-8404-4455-8ab1-0115b010f2f6",
+	VALUES ("1439141d-ddda-445b-aa90-50d41f4a17f4",
 	"54390774-10b8-4336-9d73-81e4f6bd55c6",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("e56ca70c-8404-4455-8ab1-0115b010f2f6",
+	VALUES ("1439141d-ddda-445b-aa90-50d41f4a17f4",
 	'Set_Unique_Id',
 	'',
-	'',
+	'if param.key_letter == "Class_D"
+  if param.name == "my_unique_id"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_unique_id = param.value;
+    return;
+  end if;
+end if;
+',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
@@ -523,17 +741,28 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../../../../../sql_load/models/sql_load/Interfaces/SQL_Instance_Stream/SQL_Instance_Stream.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("f1dabc39-7b88-4d57-9fca-11b4209a7f1e",
+	VALUES ("eea197b0-b773-4bdf-a583-9fa5447cb95f",
 	"ac9f31f6-0ccc-44e0-8206-9c862b1d6eaf",
-	"88d36223-0cf5-4f3b-a40e-ec61310b3885");
+	"76166be7-cdd5-4e02-98db-d63440abb0d8");
 INSERT INTO SPR_PO
-	VALUES ("f1dabc39-7b88-4d57-9fca-11b4209a7f1e",
+	VALUES ("eea197b0-b773-4bdf-a583-9fa5447cb95f",
 	'Set_String',
 	'',
 	'if param.key_letter == "Class_C"
-	select any inst from instances of Class_C where (selected.load_id == param.instance_id);
-	if param.name == "name" inst.name = param.value; end if;
-end if;',
+  if param.name == "name"
+    select any inst from instances of Class_C where (selected.load_id == param.instance_id);
+    inst.name = param.value;
+    return;
+  end if;
+end if;
+if param.key_letter == "Class_D"
+  if param.name == "my_string"
+    select any inst from instances of Class_D where (selected.load_id == param.instance_id);
+    inst.my_string = param.value;
+    return;
+  end if;
+end if;
+',
 	1,
 	0);
 INSERT INTO C_EP_PROXY
