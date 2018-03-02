@@ -40,7 +40,6 @@ INSERT INTO S_SYNC
 	'',
 	'Log::Configure(fd: STDOUT, level: Log_Level::Debug);
 
-
 Token_Stream::Identifier(name: "CREATE");
 Token_Stream::Identifier(name: "TABLE");
 Token_Stream::Identifier(name: "Class_A");
@@ -86,7 +85,7 @@ Token_Stream::Identifier(name: "my_integer");
 Token_Stream::Identifier(name: "INTEGER");
 Token_Stream::Comma();
 Token_Stream::Identifier(name: "my_real");
-Token_Stream::Identifier(name: "INTEGER");
+Token_Stream::Identifier(name: "REAL");
 Token_Stream::Comma();
 Token_Stream::Identifier(name: "my_enum");
 Token_Stream::Identifier(name: "INTEGER");
