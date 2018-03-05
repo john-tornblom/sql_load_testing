@@ -32,7 +32,7 @@ INSERT INTO GD_GE
 	"80e0145f-c920-4b72-bf6c-976c6e6b0da2",
 	100,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing:parser');
 INSERT INTO GD_SHP
 	VALUES ("7ea4b314-bded-40b1-a523-a024609a1cd6");
 INSERT INTO GD_NCS
@@ -66,7 +66,7 @@ INSERT INTO GD_GE
 	"6e245ad9-421a-4c67-9e4e-ecce9c0ec66c",
 	105,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing::Token_Stream::SQL_Token_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing:parser::Token_Stream::SQL_Token_Stream');
 INSERT INTO GD_CON
 	VALUES ("3b5b5a09-12f2-4511-8d66-44d2e09d673b",
 	"00000000-0000-0000-0000-000000000000");
@@ -187,7 +187,7 @@ INSERT INTO GD_GE
 	"3ed2df0b-03f3-44c5-b5aa-c3236df49db8",
 	106,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing::Instance_Stream::SQL_Instance_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load::Components::SQL_Parsing:parser::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("f9163fa6-9f98-4def-8898-2e3c5ef181f7",
 	"00000000-0000-0000-0000-000000000000");
@@ -300,7 +300,7 @@ INSERT INTO GD_GE
 	"7f7e6a1b-de37-478f-be81-6ac03a44e363",
 	100,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing:tester');
 INSERT INTO GD_SHP
 	VALUES ("6ea98351-1fde-4aa8-b03b-b58640412b1a");
 INSERT INTO GD_NCS
@@ -339,7 +339,7 @@ INSERT INTO GD_GE
 	"73a226fa-5a87-4721-9999-ab133764a401",
 	106,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Token_Stream::SQL_Token_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing:tester::Token_Stream::SQL_Token_Stream');
 INSERT INTO GD_CON
 	VALUES ("dbf1402e-161d-43a9-841c-2e25f96a9b42",
 	"00000000-0000-0000-0000-000000000000");
@@ -452,7 +452,7 @@ INSERT INTO GD_GE
 	"65eb0b16-bb89-4ad8-b092-b31aecee94c0",
 	105,
 	0,
-	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing::Instance_Stream::SQL_Instance_Stream');
+	'sql_load_testing::Deployments::Parsing_Testing::sql_load_testing::Components::SQL_Parsing_Testing:tester::Instance_Stream::SQL_Instance_Stream');
 INSERT INTO GD_CON
 	VALUES ("41257ad4-1ec3-4797-afcb-4e0e3e38b6b3",
 	"00000000-0000-0000-0000-000000000000");
@@ -580,8 +580,8 @@ INSERT INTO CL_IC
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000",
 	0,
-	'',
-	'sql_load::Components::SQL_Parsing',
+	'parser',
+	'sql_load::Components::SQL_Parsing:parser',
 	'');
 INSERT INTO CL_POR
 	VALUES ("80e0145f-c920-4b72-bf6c-976c6e6b0da2",
@@ -635,7 +635,7 @@ INSERT INTO CL_IR
 INSERT INTO C_IR_PROXY
 	VALUES ("5d86e2f3-6251-4a73-8224-b875dd53f848",
 	"cfc64ca3-674c-4fe4-97a6-a5aa66c40945",
-	"00000000-0000-0000-0000-000000000000",
+	"9f4e5e37-c560-4602-80f3-450de83adc7c",
 	"4b58c7aa-49e0-4879-90c7-2b18d8a39c0a",
 	'../../../../../sql_load/models/sql_load/Components/SQL_Parsing/SQL_Parsing.xtuml');
 INSERT INTO C_PO_PROXY
@@ -668,8 +668,8 @@ INSERT INTO CL_IC
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000",
 	0,
-	'',
-	'sql_load_testing::Components::SQL_Parsing_Testing',
+	'tester',
+	'sql_load_testing::Components::SQL_Parsing_Testing:tester',
 	'');
 INSERT INTO CL_POR
 	VALUES ("7f7e6a1b-de37-478f-be81-6ac03a44e363",

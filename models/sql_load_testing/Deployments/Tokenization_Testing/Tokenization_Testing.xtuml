@@ -32,7 +32,7 @@ INSERT INTO GD_GE
 	"c01fb85f-fa15-4f47-a652-9e11d4726079",
 	100,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing');
+	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing:unit_testing');
 INSERT INTO GD_SHP
 	VALUES ("21f699a8-ab50-47b7-9d12-693c683f6662");
 INSERT INTO GD_NCS
@@ -76,7 +76,7 @@ INSERT INTO GD_GE
 	"0a801762-48a9-40a6-bb5c-238c5f1ba4fe",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing::Registration::Unit_Test_Registration');
+	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing:unit_testing::Registration::Unit_Test_Registration');
 INSERT INTO GD_CON
 	VALUES ("444dddb1-b379-4d0e-8f38-ce390eda6c74",
 	"00000000-0000-0000-0000-000000000000");
@@ -184,7 +184,7 @@ INSERT INTO GD_GE
 	"9b45f513-771a-4c9a-a834-9b4ca8fd4431",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing::Execution::Unit_Test_Execution');
+	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing:unit_testing::Execution::Unit_Test_Execution');
 INSERT INTO GD_CON
 	VALUES ("ed2bc983-5c5a-4e94-a627-db201258aa26",
 	"00000000-0000-0000-0000-000000000000");
@@ -292,7 +292,7 @@ INSERT INTO GD_GE
 	"084ddfc8-cd3a-4a7d-b4da-b90155703f1f",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing::Rendering::Unit_Test_Rendering');
+	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing:unit_testing::Rendering::Unit_Test_Rendering');
 INSERT INTO GD_CON
 	VALUES ("1aaa43e2-b1b9-4962-9241-9d331655fb21",
 	"00000000-0000-0000-0000-000000000000");
@@ -400,7 +400,7 @@ INSERT INTO GD_GE
 	"6c0263b3-65ec-4ad1-a00b-225a208ae55d",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing::Assertion::Unit_Test_Assertion');
+	'sql_load_testing::Deployments::Tokenization_Testing::unit_testing::Components::Unit_Testing:unit_testing::Assertion::Unit_Test_Assertion');
 INSERT INTO GD_CON
 	VALUES ("021c457b-7350-4523-84be-c402c9eb8d28",
 	"00000000-0000-0000-0000-000000000000");
@@ -508,7 +508,7 @@ INSERT INTO GD_GE
 	"598c4f97-8d1a-487e-bfaa-0596fcb62c18",
 	100,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester');
 INSERT INTO GD_SHP
 	VALUES ("7f667c75-668b-451a-bacf-bd9ead743df6");
 INSERT INTO GD_NCS
@@ -572,7 +572,7 @@ INSERT INTO GD_GE
 	"d3e01e30-8465-49dc-9d5d-b62b200ec29b",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Assertion::Unit_Test_Assertion');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Assertion::Unit_Test_Assertion');
 INSERT INTO GD_CON
 	VALUES ("76c444dd-349e-47e5-bc0e-4abda88ad8fe",
 	"00000000-0000-0000-0000-000000000000");
@@ -672,7 +672,7 @@ INSERT INTO GD_GE
 	"1d33bb30-20c5-414a-b6d6-65ad5c5039e7",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Execution::Unit_Test_Execution');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Execution::Unit_Test_Execution');
 INSERT INTO GD_CON
 	VALUES ("c7263db3-d2cb-432f-a961-53bf9607f63a",
 	"00000000-0000-0000-0000-000000000000");
@@ -772,7 +772,7 @@ INSERT INTO GD_GE
 	"0e493384-4e41-454b-b671-652e613d8532",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Registration::Unit_Test_Registration');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Registration::Unit_Test_Registration');
 INSERT INTO GD_CON
 	VALUES ("003f0941-13b9-468a-8069-d67d3901ae46",
 	"00000000-0000-0000-0000-000000000000");
@@ -872,7 +872,7 @@ INSERT INTO GD_GE
 	"18c93926-d015-44f9-a9e4-e6a4485af424",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Rendering::Unit_Test_Rendering');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Rendering::Unit_Test_Rendering');
 INSERT INTO GD_CON
 	VALUES ("25749362-8456-4eec-943f-cac29e933974",
 	"00000000-0000-0000-0000-000000000000");
@@ -972,7 +972,7 @@ INSERT INTO GD_GE
 	"7c565b22-c276-43c4-96d9-b5fc5c586769",
 	100,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization:tokenizer');
 INSERT INTO GD_SHP
 	VALUES ("3c954583-98c1-4a24-aacb-9f7420a0481f");
 INSERT INTO GD_NCS
@@ -1006,7 +1006,7 @@ INSERT INTO GD_GE
 	"b5da3a78-4b83-47d6-9076-d2e5af0a5fed",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization::Input::Character_Stream');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization:tokenizer::Input::Character_Stream');
 INSERT INTO GD_CON
 	VALUES ("44f7a5c8-cdb3-4215-bbdd-9d85e0d37a15",
 	"00000000-0000-0000-0000-000000000000");
@@ -1114,7 +1114,7 @@ INSERT INTO GD_GE
 	"840105aa-beea-47e3-ab9e-56652c153488",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization::Output::SQL_Token_Stream');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load::Components::SQL_Tokenization:tokenizer::Output::SQL_Token_Stream');
 INSERT INTO GD_CON
 	VALUES ("2d5c37a0-17c8-4a0c-9c61-5f6fa6059152",
 	"00000000-0000-0000-0000-000000000000");
@@ -1214,7 +1214,7 @@ INSERT INTO GD_GE
 	"94a39b55-d7ba-4181-8c6a-851a8cb10916",
 	105,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Token_Stream::SQL_Token_Stream');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Token_Stream::SQL_Token_Stream');
 INSERT INTO GD_CON
 	VALUES ("6c56f005-a8f3-4b24-8b88-6c65f038d7b5",
 	"00000000-0000-0000-0000-000000000000");
@@ -1322,7 +1322,7 @@ INSERT INTO GD_GE
 	"8e098bf4-c997-47ba-b712-263078018d22",
 	106,
 	0,
-	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing::Character_Stream::Character_Stream');
+	'sql_load_testing::Deployments::Tokenization_Testing::sql_load_testing::Components::SQL_Tokenization_Testing:tester::Character_Stream::Character_Stream');
 INSERT INTO GD_CON
 	VALUES ("30b979c1-215d-450e-be99-498c1b6c9993",
 	"00000000-0000-0000-0000-000000000000");
@@ -1429,8 +1429,8 @@ INSERT INTO CL_IC
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000",
 	0,
-	'',
-	'unit_testing::Components::Unit_Testing',
+	'unit_testing',
+	'unit_testing::Components::Unit_Testing:unit_testing',
 	'');
 INSERT INTO CL_POR
 	VALUES ("c01fb85f-fa15-4f47-a652-9e11d4726079",
@@ -1583,8 +1583,8 @@ INSERT INTO CL_IC
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000",
 	0,
-	'',
-	'sql_load_testing::Components::SQL_Tokenization_Testing',
+	'tester',
+	'sql_load_testing::Components::SQL_Tokenization_Testing:tester',
 	'');
 INSERT INTO CL_POR
 	VALUES ("598c4f97-8d1a-487e-bfaa-0596fcb62c18",
@@ -1791,8 +1791,8 @@ INSERT INTO CL_IC
 	"00000000-0000-0000-0000-000000000000",
 	"00000000-0000-0000-0000-000000000000",
 	0,
-	'',
-	'sql_load::Components::SQL_Tokenization',
+	'tokenizer',
+	'sql_load::Components::SQL_Tokenization:tokenizer',
 	'');
 INSERT INTO CL_POR
 	VALUES ("7c565b22-c276-43c4-96d9-b5fc5c586769",
@@ -1816,7 +1816,7 @@ INSERT INTO CL_IPINS
 INSERT INTO C_IR_PROXY
 	VALUES ("0fcdb5ee-dc86-45ee-8c6f-3033751e0224",
 	"09a35036-dc67-4be0-991d-26e9efcdea33",
-	"00000000-0000-0000-0000-000000000000",
+	"ebe95a00-4172-4147-9d71-0938d10ce3ca",
 	"5a7c7300-5e45-4e9e-a8b2-50f400913e2d",
 	'../../../../../sql_load/models/sql_load/Components/SQL_Tokenization/SQL_Tokenization.xtuml');
 INSERT INTO C_PO_PROXY
